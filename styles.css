@@ -840,36 +840,69 @@
 
   /* ── RESPONSIVE ── */
   @media (max-width: 900px) {
-    .sidebar { display: none; }
-    .main-content { max-width: 100%; }
-    .sections-grid { grid-template-columns: 1fr; }
-    .calc-inputs { grid-template-columns: 1fr; }
-    header { padding: 0 1rem; }
-    .header-badges { display: none; }
-  }
+    html, body { overflow-x: hidden; width: 100%; max-width: 100vw; }
+    
+    .sidebar { display: none !important; }
+    
+    .main-content {
+      width: 100% !important;
+      max-width: 100% !important;
+      min-width: 0 !important;
+      padding: 1rem 0.75rem !important;
+      overflow-x: hidden !important;
+    }
 
-  @media (max-width: 600px) {
-    .main-content { padding: 1rem; }
+    header {
+      height: auto !important;
+      padding: 0.75rem 1rem !important;
+      flex-direction: column !important;
+      align-items: stretch !important;
+      gap: 0.5rem !important;
+    }
     
-    header { height: auto; padding: 0.75rem 1rem; flex-direction: column; align-items: flex-start; gap: 0.75rem; }
-    .search-bar { width: 100%; max-width: 100%; }
-    
-    .hero { padding: 3rem 1.5rem 2rem; border-radius: 0; }
-    .hero h1 { font-size: 1.4rem; }
-    .hero p { font-size: 0.9rem; }
-    .hero-stats { flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
-    .hero-stat { flex: 1 1 45%; min-width: 120px; padding: 0.75rem; }
-    
-    .filter-tabs { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 0.5rem; justify-content: flex-start; scrollbar-width: none; }
+    .header-brand { justify-content: space-between; }
+    .header-badges { display: none !important; }
+    .search-bar { width: 100% !important; max-width: 100% !important; }
+    .search-bar input { width: 100% !important; }
+
+    .hero { padding: 2rem 1rem 1.5rem !important; border-radius: 0 !important; }
+    .hero-tag { max-width: 100%; white-space: normal; word-break: break-word; text-align: center; }
+    .hero h1 { font-size: 1.35rem !important; word-break: break-word; }
+    .hero p { font-size: 0.85rem !important; }
+    .hero-stats { flex-wrap: wrap !important; justify-content: flex-start !important; gap: 0.5rem !important; }
+    .hero-stat { flex: 1 1 40% !important; min-width: 110px !important; padding: 0.5rem !important; }
+
+    .filter-tabs {
+      flex-wrap: nowrap !important;
+      overflow-x: auto !important;
+      padding-bottom: 0.5rem !important;
+      justify-content: flex-start !important;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
     .filter-tabs::-webkit-scrollbar { display: none; }
-    .filter-tab { white-space: nowrap; flex-shrink: 0; font-size: 0.8rem; padding: 0.5rem 1rem; }
+    .filter-tab { white-space: nowrap !important; flex-shrink: 0 !important; font-size: 0.75rem !important; padding: 0.4rem 0.8rem !important; }
+
+    .tax-card { max-width: 100% !important; min-width: 0 !important; }
+    .tax-card-header {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      padding: 1rem !important;
+      gap: 0.75rem !important;
+    }
     
-    .tax-card-header { flex-direction: column; align-items: flex-start; padding: 1.25rem; gap: 1rem; }
-    .tax-card-right { width: 100%; flex-direction: row; justify-content: space-between; align-items: center; }
-    .tax-card-body { padding: 1.25rem; }
-    
-    .tarif-table { display: block; overflow-x: auto; white-space: nowrap; }
-    .calc-box { padding: 1rem; }
+    .tax-card-top { flex-wrap: wrap !important; gap: 0.4rem !important; }
+    .tax-card-name { font-size: 0.95rem !important; word-break: break-word; }
+    .tax-card-meta { width: 100% !important; min-width: 0 !important; }
+    .tax-card-right { width: 100% !important; flex-direction: row !important; justify-content: space-between !important; align-items: center !important; }
+
+    .tax-card-body { padding: 1rem 0.75rem !important; min-width: 0 !important; }
+    .sections-grid { grid-template-columns: 1fr !important; gap: 0.75rem !important; }
+    .calc-inputs { grid-template-columns: 1fr !important; }
+
+    .tarif-table { display: block !important; overflow-x: auto !important; max-width: 100% !important; white-space: nowrap !important; }
+    .calc-box { padding: 0.75rem !important; }
+    .dpp-formula { white-space: pre-wrap !important; word-break: break-word !important; overflow-x: auto !important; max-width: 100% !important; }
   }
 
   /* ── ANIMATIONS ── */
