@@ -82,22 +82,39 @@ function showOutput(id) {
   document.getElementById(id).classList.add('show');
 }
 
+// PKB: auto-fill tarif saat dropdown "Kendaraan ke-" berubah (UU HKPD Pasal 8)
+// Tarif dasar maks 1%, tiap kendaraan berikutnya +0.5%
+function updatePKBTarif(selectEl) {
+  const selected = selectEl.options[selectEl.selectedIndex];
+  const tarif = selected.getAttribute('data-tarif');
+  const tarifInput = document.getElementById('pkb-tarif');
+  tarifInput.value = tarif;
+  // Flash border biru sebagai visual feedback
+  tarifInput.style.borderColor = '#3b82f6';
+  tarifInput.style.color = '#60a5fa';
+  setTimeout(() => {
+    tarifInput.style.borderColor = '';
+    tarifInput.style.color = '';
+  }, 800);
+}
+
 function calcPKB() {
   const njkb = +document.getElementById('pkb-njkb').value;
   const bobot = +document.getElementById('pkb-bobot').value;
   const tarif = +document.getElementById('pkb-tarif').value / 100;
-  
+
   const dpp = njkb * bobot;
   const pkb = dpp * tarif;
   const opsen = pkb * 0.66;
   const total = pkb + opsen;
-  
+
   document.getElementById('pkb-r1').textContent = fmt(dpp);
   document.getElementById('pkb-r2').textContent = fmt(pkb);
   document.getElementById('pkb-r3').textContent = fmt(opsen);
   document.getElementById('pkb-r4').textContent = fmt(total);
   showOutput('pkb-output');
 }
+
 
 function calcBBNKB() {
   const njkb = +document.getElementById('bbnkb-njkb').value;
