@@ -41,6 +41,8 @@
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   /* Animated background */
@@ -223,6 +225,7 @@
   /* ── MAIN CONTENT ── */
   .main-content {
     flex: 1;
+    min-width: 0;
     padding: 2rem;
     overflow-x: hidden;
     max-width: calc(100vw - 280px);
@@ -381,7 +384,7 @@
   .icon-kabkot { background: rgba(16,185,129,0.15); }
   .icon-opsen { background: rgba(139,92,246,0.15); }
 
-  .tax-card-meta { flex: 1; }
+  .tax-card-meta { flex: 1; min-width: 0; }
 
   .tax-card-top {
     display: flex;
