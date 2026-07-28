@@ -1,0 +1,2490 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Handbook Pajak Daerah - UU HKPD No. 1 Tahun 2022</title>
+<meta name="description" content="Panduan lengkap dan interaktif semua jenis Pajak Daerah berdasarkan UU HKPD No. 1 Tahun 2022 Pasal 1-80: PKB, BBNKB, PAB, PBBKB, PAP, Pajak Rokok, PBB-P2, BPHTB, PBJT, Pajak Reklame, PAT, Pajak MBLB, Pajak Sarang Burung Walet, dan Opsen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Progress bar -->
+<div class="toc-progress" id="tocProgress"></div>
+
+<!-- HEADER -->
+<header>
+  <div class="header-brand">
+    <div class="header-logo">HC</div>
+    <div>
+      <div class="header-title">Handbook Pajak Daerah</div>
+      <div class="header-sub">UU HKPD No. 1 Tahun 2022 · Pasal 1–80</div>
+    </div>
+  </div>
+
+  <div class="search-bar">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="searchInput" placeholder="Cari jenis pajak, pasal, tarif..." aria-label="Cari pajak">
+  </div>
+
+  <div class="header-badges">
+    <span class="badge badge-province">● Pajak Provinsi (7)</span>
+    <span class="badge badge-kabkot">● Pajak Kab/Kota (9)</span>
+  </div>
+</header>
+
+<!-- LAYOUT -->
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">Pajak Provinsi — 7 Jenis (Pasal 4 ayat 1)</div>
+      <a class="sidebar-item" href="#pkb" onclick="scrollToCard('pkb')">
+        <span class="tax-type-dot dot-province"></span>
+        <span>1. Pajak Kendaraan Bermotor</span>
+        <span class="sidebar-item-pasal">Ps. 7–11</span>
+      </a>
+      <a class="sidebar-item" href="#bbnkb" onclick="scrollToCard('bbnkb')">
+        <span class="tax-type-dot dot-province"></span>
+        <span>2. Bea Balik Nama KB</span>
+        <span class="sidebar-item-pasal">Ps. 12–16</span>
+      </a>
+      <a class="sidebar-item" href="#pab" onclick="scrollToCard('pab')">
+        <span class="tax-type-dot dot-province"></span>
+        <span>3. Pajak Alat Berat</span>
+        <span class="sidebar-item-pasal">Ps. 17–22</span>
+      </a>
+      <a class="sidebar-item" href="#pbbkb" onclick="scrollToCard('pbbkb')">
+        <span class="tax-type-dot dot-province"></span>
+        <span>4. Pajak BB Kendaraan Bermotor</span>
+        <span class="sidebar-item-pasal">Ps. 23–27</span>
+      </a>
+      <a class="sidebar-item" href="#pap" onclick="scrollToCard('pap')">
+        <span class="tax-type-dot dot-province"></span>
+        <span>5. Pajak Air Permukaan</span>
+        <span class="sidebar-item-pasal">Ps. 28–32</span>
+      </a>
+      <a class="sidebar-item" href="#rokok" onclick="scrollToCard('rokok')">
+        <span class="tax-type-dot dot-province"></span>
+        <span>6. Pajak Rokok</span>
+        <span class="sidebar-item-pasal">Ps. 33–37</span>
+      </a>
+      <a class="sidebar-item" href="#opsen-mblb" onclick="scrollToCard('opsen-mblb')">
+        <span class="tax-type-dot dot-province"></span>
+        <span>7. Opsen Pajak MBLB ★</span>
+        <span class="sidebar-item-pasal">Ps. 81–84</span>
+      </a>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">Pajak Kab/Kota — 9 Jenis (Pasal 4 ayat 2)</div>
+      <a class="sidebar-item" href="#pbbp2" onclick="scrollToCard('pbbp2')">
+        <span class="tax-type-dot dot-kabkot"></span>
+        <span>1. PBB Perdesaan &amp; Perkotaan</span>
+        <span class="sidebar-item-pasal">Ps. 38–43</span>
+      </a>
+      <a class="sidebar-item" href="#bphtb" onclick="scrollToCard('bphtb')">
+        <span class="tax-type-dot dot-kabkot"></span>
+        <span>2. BPHTB</span>
+        <span class="sidebar-item-pasal">Ps. 44–49</span>
+      </a>
+      <a class="sidebar-item" href="#pbjt" onclick="scrollToCard('pbjt')">
+        <span class="tax-type-dot dot-kabkot"></span>
+        <span>3. Pajak Barang &amp; Jasa Tertentu</span>
+        <span class="sidebar-item-pasal">Ps. 50–59</span>
+      </a>
+      <a class="sidebar-item" href="#reklame" onclick="scrollToCard('reklame')">
+        <span class="tax-type-dot dot-kabkot"></span>
+        <span>4. Pajak Reklame</span>
+        <span class="sidebar-item-pasal">Ps. 60–64</span>
+      </a>
+      <a class="sidebar-item" href="#pat" onclick="scrollToCard('pat')">
+        <span class="tax-type-dot dot-kabkot"></span>
+        <span>5. Pajak Air Tanah</span>
+        <span class="sidebar-item-pasal">Ps. 65–70</span>
+      </a>
+      <a class="sidebar-item" href="#mblb" onclick="scrollToCard('mblb')">
+        <span class="tax-type-dot dot-kabkot"></span>
+        <span>6. Pajak MBLB</span>
+        <span class="sidebar-item-pasal">Ps. 71–75</span>
+      </a>
+      <a class="sidebar-item" href="#walet" onclick="scrollToCard('walet')">
+        <span class="tax-type-dot dot-kabkot"></span>
+        <span>7. Pajak Sarang Burung Walet</span>
+        <span class="sidebar-item-pasal">Ps. 76–80</span>
+      </a>
+      <a class="sidebar-item" href="#opsen-pkb" onclick="scrollToCard('opsen-pkb')">
+        <span class="tax-type-dot dot-kabkot"></span>
+        <span>8. Opsen PKB ★</span>
+        <span class="sidebar-item-pasal">Ps. 81–84</span>
+      </a>
+      <a class="sidebar-item" href="#opsen-bbnkb" onclick="scrollToCard('opsen-bbnkb')">
+        <span class="tax-type-dot dot-kabkot"></span>
+        <span>9. Opsen BBNKB ★</span>
+        <span class="sidebar-item-pasal">Ps. 81–84</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main-content">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-tag">
+        <span class="live-dot"></span>
+        UU No. 1 Tahun 2022 (HKPD) · Berlaku 5 Januari 2022
+      </div>
+      <h1>Handbook Lengkap Pajak Daerah<br>Pasal 1–80 UU HKPD</h1>
+      <p>Panduan komprehensif dan interaktif mencakup semua jenis Pajak Daerah: definisi, objek, subjek, wajib pajak, dasar pengenaan, tarif, saat terutang, studi kasus, dan simulasi perhitungan — diperkaya dengan peraturan pelaksana PP, PMK, Permendagri, dan Perda.</p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-num">16</span>
+          <span class="hero-stat-label">Total Jenis Pajak</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">7</span>
+          <span class="hero-stat-label">Pajak Provinsi</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">9</span>
+          <span class="hero-stat-label">Pajak Kab/Kota</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">3</span>
+          <span class="hero-stat-label">Jenis Opsen</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">80</span>
+          <span class="hero-stat-label">Pasal Dibahas</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FILTER TABS -->
+    <div class="filter-tabs" role="group" aria-label="Filter jenis pajak">
+      <button class="filter-tab active-all" onclick="filterCards('all', this)" id="tab-all">🏛️ Semua Pajak (16)</button>
+      <button class="filter-tab" onclick="filterCards('province', this)" id="tab-province">📍 Pajak Provinsi (7)</button>
+      <button class="filter-tab" onclick="filterCards('kabkot', this)" id="tab-kabkot">🏘️ Pajak Kab/Kota (9)</button>
+    </div>
+
+    <!-- TAX GRID -->
+    <div class="tax-grid" id="taxGrid">
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 1. PKB -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <div class="tax-card" id="pkb" data-type="province" data-keywords="pkb pajak kendaraan bermotor kendaraan motor mobil provinsi">
+        <div class="tax-card-header" onclick="toggleCard('pkb')">
+          <div class="tax-icon icon-province">🚗</div>
+          <div class="tax-card-meta">
+            <div class="tax-card-top">
+              <span class="tax-card-name">Pajak Kendaraan Bermotor (PKB)</span>
+              <span class="tax-card-abbr abbr-province">PROVINSI</span>
+            </div>
+            <div class="tax-card-pasal">Pasal 7–11 UU HKPD | Pasal 1 angka 28</div>
+            <div class="tax-card-desc">Pajak atas kepemilikan dan/atau penguasaan kendaraan bermotor yang dipungut oleh Pemerintah Provinsi.</div>
+          </div>
+          <div class="tax-card-right">
+            <div class="tax-rate-badge">
+              <div class="tax-rate-label">Tarif Maks</div>
+              <div class="tax-rate-value tarif-low">1,2%</div>
+            </div>
+            <button class="expand-btn" aria-label="Expand detail PKB">▼</button>
+          </div>
+        </div>
+
+        <div class="tax-card-body">
+          <div class="sections-grid">
+            <!-- Definisi -->
+            <div class="section-block">
+              <h3 style="color:#60a5fa"><span class="section-icon" style="background:rgba(59,130,246,0.2)">📖</span> Definisi</h3>
+              <p>Kontribusi wajib kepada Daerah yang terutang oleh orang pribadi atau badan atas <strong>kepemilikan dan/atau penguasaan Kendaraan Bermotor</strong> (semua kendaraan beroda beserta gandengannya yang digunakan di jalan darat atau di air yang digerakkan oleh motor).</p>
+              <div class="reg-tags">
+                <span class="reg-uu">UU HKPD No. 1/2022 Ps. 1 angka 28</span>
+                <span class="reg-pp">PP No. 35/2023</span>
+              </div>
+            </div>
+            <!-- Objek Pajak -->
+            <div class="section-block">
+              <h3 style="color:#34d399"><span class="section-icon" style="background:rgba(16,185,129,0.2)">🎯</span> Objek Pajak</h3>
+              <ul>
+                <li>Kepemilikan dan/atau penguasaan atas Kendaraan Bermotor</li>
+                <li>Kendaraan Bermotor yang wajib didaftarkan di wilayah provinsi</li>
+              </ul>
+              <div style="margin-top:0.5rem; font-size:0.75rem; color:var(--text-muted)">Dikecualikan:</div>
+              <div class="excl-list">
+                <div class="excl-item">Kereta api</div>
+                <div class="excl-item">Kendaraan untuk pertahanan/keamanan negara</div>
+                <div class="excl-item">Kendaraan kedutaan/perwakilan asing (asas timbal balik)</div>
+                <div class="excl-item">Kendaraan berbasis energi terbarukan</div>
+              </div>
+            </div>
+            <!-- Subjek & WP -->
+            <div class="section-block">
+              <h3 style="color:#c4b5fd"><span class="section-icon" style="background:rgba(139,92,246,0.2)">👤</span> Subjek &amp; Wajib Pajak</h3>
+              <p><strong>Subjek Pajak:</strong> Orang pribadi atau Badan yang <em>memiliki dan/atau menguasai</em> Kendaraan Bermotor.</p>
+              <p style="margin-top:0.5rem"><strong>Wajib Pajak:</strong> Orang pribadi atau Badan yang <em>memiliki</em> Kendaraan Bermotor (tercantum dalam BPKB/STNK).</p>
+              <div class="info-pill">ℹ️ Kepemilikan didasarkan atas nama, NIK, dan/atau alamat yang sama (Pasal 10 ayat 4)</div>
+            </div>
+            <!-- DPP -->
+            <div class="section-block">
+              <h3 style="color:#fcd34d"><span class="section-icon" style="background:rgba(245,158,11,0.2)">📊</span> Dasar Pengenaan Pajak (DPP)</h3>
+              <p>Hasil perkalian dua unsur:</p>
+              <div class="dpp-formula">DPP = Nilai Jual KB × Bobot KB
+              
+Nilai Jual KB = Harga pasaran umum (per Desember tahun pajak sebelumnya)
+Bobot = Koefisien kerusakan jalan/pencemaran (≥1)
+Khusus KB di air: DPP = Nilai Jual KB saja</div>
+              <div class="reg-tags" style="margin-top:0.75rem">
+                <span class="reg-pmk">Permendagri (tabel NJKB)</span>
+                <span class="reg-pergub">Pergub (selain KB baru)</span>
+              </div>
+            </div>
+            <!-- Tarif -->
+            <div class="section-block full-width">
+              <h3 style="color:#f87171"><span class="section-icon" style="background:rgba(239,68,68,0.2)">💹</span> Tarif PKB</h3>
+              <table class="tarif-table">
+                <tr><th>Jenis Kepemilikan</th><th>Wilayah Umum</th><th>Provinsi Khusus*</th></tr>
+                <tr><td>Kendaraan Pertama</td><td class="tarif-low">Maks 1,2%</td><td class="tarif-low">Maks 2%</td></tr>
+                <tr><td>Kendaraan Kedua dst. (Progresif)</td><td class="tarif-high">Maks 6%</td><td class="tarif-high">Maks 10%</td></tr>
+                <tr><td>Angkutan Umum / Ambulans / Damkar / Pemerintah</td><td class="tarif-low">Maks 0,5%</td><td class="tarif-low">Maks 0,5%</td></tr>
+              </table>
+              <div class="note-box">* Provinsi yang tidak terbagi dalam kab/kota otonom (misal: DKI Jakarta). Tarif ditetapkan dengan Perda.</div>
+              <div class="reg-tags" style="margin-top:0.5rem">
+                <span class="reg-perda">Perda Provinsi</span>
+                <span class="reg-pp">PP No. 35/2023 (tata cara pemungutan)</span>
+              </div>
+            </div>
+            <!-- Saat Terutang -->
+            <div class="section-block">
+              <h3 style="color:#67e8f9"><span class="section-icon" style="background:rgba(6,182,212,0.2)">⏰</span> Saat Terutang</h3>
+              <div class="terutang-timeline">
+                <div class="terutang-item"><span class="terutang-dot"></span>Terhitung sejak tanggal pendaftaran Kendaraan Bermotor</div>
+                <div class="terutang-item"><span class="terutang-dot"></span>Dikenakan untuk 12 bulan berturut-turut</div>
+                <div class="terutang-item"><span class="terutang-dot"></span>Dipungut di wilayah tempat KB terdaftar (Samsat)</div>
+              </div>
+            </div>
+            <!-- Peraturan -->
+            <div class="section-block">
+              <h3 style="color:#a78bfa"><span class="section-icon" style="background:rgba(139,92,246,0.2)">📋</span> Peraturan Terkait</h3>
+              <div class="reg-tags">
+                <span class="reg-uu">UU HKPD No.1/2022 Ps.7–11</span>
+                <span class="reg-pp">PP No. 35/2023</span>
+                <span class="reg-pmk">Permendagri (NJKB)</span>
+                <span class="reg-pergub">Pergub</span>
+                <span class="reg-perda">Perda Provinsi</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- STUDI KASUS -->
+          <div class="case-study">
+            <div class="case-study-header">
+              <span style="font-size:1.25rem">📚</span>
+              <h3>Studi Kasus &amp; Simulasi Perhitungan PKB</h3>
+            </div>
+            <div class="case-scenario">
+              <strong>Kasus:</strong> Pak Budi memiliki Toyota Avanza 1.3G tahun 2021 (kendaraan pertama). NJKB ditetapkan Rp145.000.000. Bobot koefisien = 1,025. Tarif PKB Provinsi Jawa Tengah = 1,2% (Perda Prov. Jateng No. 2/2023).
+            </div>
+            <div class="calc-steps">
+              <div class="calc-step">
+                <div class="calc-step-num">1</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">Nilai Jual Kendaraan Bermotor (NJKB)</div>
+                  <div class="calc-step-value">Rp 145.000.000</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">2</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">DPP = NJKB × Bobot</div>
+                  <div class="calc-step-value">Rp 145.000.000 × 1,025 = Rp 148.625.000</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">3</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">PKB = DPP × Tarif (1,2%)</div>
+                  <div class="calc-step-value">Rp 148.625.000 × 1,2% = Rp 1.783.500</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">4</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">Opsen PKB (66% dari PKB pokok) — dipungut kab/kota</div>
+                  <div class="calc-step-value">Rp 1.783.500 × 66% = Rp 1.177.110</div>
+                </div>
+              </div>
+            </div>
+            <div class="calc-result">
+              <span class="calc-result-label">✅ Total PKB Terutang</span>
+              <span class="calc-result-amount">Rp 1.783.500 / tahun</span>
+            </div>
+          </div>
+
+          <!-- INTERACTIVE CALCULATOR -->
+          <div class="calc-interactive">
+            <h4>🧮 Kalkulator PKB Interaktif</h4>
+            <div class="calc-inputs">
+              <div class="calc-input-group">
+                <label>NJKB (Rp)</label>
+                <input type="number" id="pkb-njkb" placeholder="cth: 145000000" value="145000000">
+              </div>
+              <div class="calc-input-group">
+                <label>Bobot Koefisien</label>
+                <input type="number" id="pkb-bobot" placeholder="cth: 1.025" value="1.025" step="0.001">
+              </div>
+              <div class="calc-input-group">
+                <label>Tarif PKB (%)</label>
+                <input type="number" id="pkb-tarif" placeholder="cth: 1.2" value="1.2" step="0.1">
+              </div>
+              <div class="calc-input-group">
+                <label>Kendaraan ke-</label>
+                <select id="pkb-urutan">
+                  <option value="1">1 (Pertama)</option>
+                  <option value="2">2 (Progresif)</option>
+                  <option value="3">3+ (Progresif Max)</option>
+                </select>
+              </div>
+            </div>
+            <button class="calc-btn" onclick="calcPKB()">Hitung PKB</button>
+            <div class="calc-output" id="pkb-output">
+              <div class="calc-output-row"><span class="calc-output-label">DPP (NJKB × Bobot)</span><span class="calc-output-val" id="pkb-r1">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">PKB Pokok (DPP × Tarif)</span><span class="calc-output-val" id="pkb-r2">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">Opsen PKB 66% (kab/kota)</span><span class="calc-output-val" id="pkb-r3">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">Total yang Dibayar WP</span><span class="calc-output-val" id="pkb-r4">-</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 2. BBNKB -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <div class="tax-card" id="bbnkb" data-type="province" data-keywords="bbnkb bea balik nama kendaraan bermotor beli jual provinsi">
+        <div class="tax-card-header" onclick="toggleCard('bbnkb')">
+          <div class="tax-icon icon-province">🔄</div>
+          <div class="tax-card-meta">
+            <div class="tax-card-top">
+              <span class="tax-card-name">Bea Balik Nama Kendaraan Bermotor (BBNKB)</span>
+              <span class="tax-card-abbr abbr-province">PROVINSI</span>
+            </div>
+            <div class="tax-card-pasal">Pasal 12–16 UU HKPD | Pasal 1 angka 29</div>
+            <div class="tax-card-desc">Pajak atas penyerahan pertama hak milik kendaraan bermotor akibat jual beli, tukar-menukar, hibah, warisan, atau pemasukan ke badan usaha.</div>
+          </div>
+          <div class="tax-card-right">
+            <div class="tax-rate-badge">
+              <div class="tax-rate-label">Tarif Maks</div>
+              <div class="tax-rate-value tarif-high">12%</div>
+            </div>
+            <button class="expand-btn" aria-label="Expand detail BBNKB">▼</button>
+          </div>
+        </div>
+
+        <div class="tax-card-body">
+          <div class="sections-grid">
+            <div class="section-block">
+              <h3 style="color:#60a5fa">📖 Definisi</h3>
+              <p>Pajak atas <strong>penyerahan pertama</strong> atas Kendaraan Bermotor sebagai akibat perjanjian dua pihak atau perbuatan sepihak atau keadaan yang terjadi karena: <em>jual beli, tukar-menukar, hibah, warisan, atau pemasukan ke dalam badan usaha</em>.</p>
+              <div class="reg-tags"><span class="reg-uu">UU HKPD Ps.1 angka 29, Ps.12–16</span></div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#34d399">🎯 Objek Pajak</h3>
+              <ul>
+                <li>Penyerahan <strong>pertama</strong> atas Kendaraan Bermotor (pembelian baru)</li>
+                <li>Pemasukan KB dari luar negeri untuk dipakai tetap di Indonesia</li>
+              </ul>
+              <div class="excl-list">
+                <div class="excl-item">Kereta api</div>
+                <div class="excl-item">KB untuk keperluan pertahanan/keamanan</div>
+                <div class="excl-item">KB kedutaan/perwakilan asing</div>
+                <div class="excl-item">KB berbasis energi terbarukan</div>
+                <div class="excl-item">KB untuk diperdagangkan kembali</div>
+              </div>
+              <div class="note-box">⚠️ BBNKB hanya untuk penyerahan PERTAMA. Penyerahan berikutnya (misal: jual beli KB bekas) TIDAK dikenakan BBNKB — hanya PKB yang wajib dibayar saat perpanjangan STNK.</div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#c4b5fd">👤 Subjek &amp; Wajib Pajak</h3>
+              <p><strong>Subjek Pajak:</strong> Orang pribadi atau Badan yang <em>menerima</em> penyerahan Kendaraan Bermotor (pembeli/penerima hibah).</p>
+              <p style="margin-top:0.5rem"><strong>Wajib Pajak:</strong> Sama dengan Subjek Pajak — orang/badan yang menerima penyerahan KB.</p>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#fcd34d">📊 Dasar Pengenaan (DPP)</h3>
+              <p>Nilai Jual Kendaraan Bermotor (NJKB) yang ditetapkan dalam Permendagri dan Pergub (sama dengan tabel PKB).</p>
+              <div class="dpp-formula">DPP BBNKB = NJKB (sesuai Permendagri/Pergub)
+Tidak dikalikan bobot seperti PKB</div>
+              <div class="reg-tags"><span class="reg-pmk">Permendagri (NJKB)</span><span class="reg-pergub">Pergub</span></div>
+            </div>
+            <div class="section-block full-width">
+              <h3 style="color:#f87171">💹 Tarif BBNKB</h3>
+              <table class="tarif-table">
+                <tr><th>Jenis Wilayah</th><th>Tarif Maksimum</th></tr>
+                <tr><td>Provinsi umum</td><td class="tarif-high">12%</td></tr>
+                <tr><td>Provinsi khusus (tanpa kab/kota otonom, mis: DKI Jakarta)</td><td class="tarif-high">20%</td></tr>
+              </table>
+              <div class="note-box">Tarif ditetapkan dengan Perda. Pembayaran BBNKB dilakukan <strong>sebelum</strong> pendaftaran KB dan menjadi syarat pendaftaran KB baru.</div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#67e8f9">⏰ Saat Terutang</h3>
+              <div class="terutang-timeline">
+                <div class="terutang-item"><span class="terutang-dot"></span>Saat penyerahan/pendaftaran KB pertama</div>
+                <div class="terutang-item"><span class="terutang-dot"></span>Pembayaran dilakukan SEBELUM pendaftaran KB</div>
+                <div class="terutang-item"><span class="terutang-dot"></span>Dipungut di wilayah tempat KB didaftarkan</div>
+              </div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#a78bfa">📋 Peraturan Terkait</h3>
+              <div class="reg-tags">
+                <span class="reg-uu">UU HKPD No.1/2022 Ps.12–16</span>
+                <span class="reg-pp">PP No. 35/2023</span>
+                <span class="reg-pmk">Permendagri (NJKB)</span>
+                <span class="reg-perda">Perda Provinsi</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-study">
+            <div class="case-study-header"><span>📚</span><h3>Studi Kasus &amp; Simulasi BBNKB</h3></div>
+            <div class="case-scenario">
+              <strong>Kasus:</strong> Ibu Sari membeli Toyota Fortuner 2.4 GR Sport baru seharga Rp550.000.000. NJKB ditetapkan Rp520.000.000. Tarif BBNKB Provinsi DKI Jakarta = 10% (Pergub). Pembelian dilakukan di dealer Jakarta.
+            </div>
+            <div class="calc-steps">
+              <div class="calc-step">
+                <div class="calc-step-num">1</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">DPP = NJKB (Permendagri)</div>
+                  <div class="calc-step-value">Rp 520.000.000</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">2</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">BBNKB = DPP × Tarif (10%)</div>
+                  <div class="calc-step-value">Rp 520.000.000 × 10% = Rp 52.000.000</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">3</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">Opsen BBNKB 66% (kab/kota — untuk provinsi non-DKI)</div>
+                  <div class="calc-step-value">N/A untuk DKI (tidak terbagi kab/kota otonom)</div>
+                </div>
+              </div>
+            </div>
+            <div class="calc-result">
+              <span class="calc-result-label">✅ BBNKB Terutang</span>
+              <span class="calc-result-amount">Rp 52.000.000</span>
+            </div>
+          </div>
+
+          <div class="calc-interactive">
+            <h4>🧮 Kalkulator BBNKB Interaktif</h4>
+            <div class="calc-inputs">
+              <div class="calc-input-group">
+                <label>NJKB (Rp)</label>
+                <input type="number" id="bbnkb-njkb" placeholder="cth: 520000000" value="520000000">
+              </div>
+              <div class="calc-input-group">
+                <label>Tarif BBNKB (%)</label>
+                <input type="number" id="bbnkb-tarif" placeholder="cth: 10" value="10" step="0.5">
+              </div>
+              <div class="calc-input-group">
+                <label>Wilayah</label>
+                <select id="bbnkb-wilayah">
+                  <option value="normal">Provinsi Umum</option>
+                  <option value="khusus">Provinsi Khusus (DKI dll)</option>
+                </select>
+              </div>
+              <div class="calc-input-group">
+                <label>Hitung Opsen BBNKB?</label>
+                <select id="bbnkb-opsen">
+                  <option value="ya">Ya (Provinsi Umum)</option>
+                  <option value="tidak">Tidak (Provinsi Khusus)</option>
+                </select>
+              </div>
+            </div>
+            <button class="calc-btn" onclick="calcBBNKB()">Hitung BBNKB</button>
+            <div class="calc-output" id="bbnkb-output">
+              <div class="calc-output-row"><span class="calc-output-label">DPP (NJKB)</span><span class="calc-output-val" id="bbnkb-r1">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">BBNKB Pokok</span><span class="calc-output-val" id="bbnkb-r2">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">Opsen BBNKB 66%</span><span class="calc-output-val" id="bbnkb-r3">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">Total yang Dibayar WP</span><span class="calc-output-val" id="bbnkb-r4">-</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 3. PAB -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <div class="tax-card" id="pab" data-type="province" data-keywords="pab pajak alat berat excavator bulldozer provinsi konstruksi">
+        <div class="tax-card-header" onclick="toggleCard('pab')">
+          <div class="tax-icon icon-province">🏗️</div>
+          <div class="tax-card-meta">
+            <div class="tax-card-top">
+              <span class="tax-card-name">Pajak Alat Berat (PAB)</span>
+              <span class="tax-card-abbr abbr-province">PROVINSI</span>
+            </div>
+            <div class="tax-card-pasal">Pasal 17–22 UU HKPD | Pasal 1 angka 31–32</div>
+            <div class="tax-card-desc">Pajak atas kepemilikan dan/atau penguasaan alat berat (excavator, bulldozer, crane, dll.) yang tidak beroperasi di jalan.</div>
+          </div>
+          <div class="tax-card-right">
+            <div class="tax-rate-badge">
+              <div class="tax-rate-label">Tarif Maks</div>
+              <div class="tax-rate-value tarif-low">0,2%</div>
+            </div>
+            <button class="expand-btn" aria-label="Expand detail PAB">▼</button>
+          </div>
+        </div>
+
+        <div class="tax-card-body">
+          <div class="sections-grid">
+            <div class="section-block">
+              <h3 style="color:#60a5fa">📖 Definisi</h3>
+              <p>Pajak atas <strong>kepemilikan dan/atau penguasaan alat berat</strong> — alat yang diciptakan untuk membantu pekerjaan konstruksi dan teknik sipil lainnya yang bersifat berat, beroperasi dengan motor, tidak melekat permanen, dan beroperasi di area konstruksi/perkebunan/kehutanan/pertambangan.</p>
+              <div class="note-box">⚠️ PAB berbeda dari PKB — alat berat TIDAK beroperasi di jalan raya sehingga tidak dikenai PKB (sejak UU HKPD 2022, mencabut ketentuan lama).</div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#34d399">🎯 Objek Pajak</h3>
+              <p>Kepemilikan dan/atau penguasaan Alat Berat, antara lain:</p>
+              <ul>
+                <li>Excavator, bulldozer, dump truck tambang</li>
+                <li>Crane, forklift, motor grader</li>
+                <li>Alat pemancang, traktor pertanian besar</li>
+              </ul>
+              <div class="excl-list">
+                <div class="excl-item">Alat berat milik Pemerintah/Pemda/TNI/Polri</div>
+                <div class="excl-item">Alat berat kedutaan/perwakilan asing</div>
+              </div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#c4b5fd">👤 Subjek &amp; Wajib Pajak</h3>
+              <p><strong>Subjek Pajak:</strong> Orang pribadi atau Badan yang memiliki dan/atau menguasai Alat Berat.</p>
+              <p style="margin-top:0.5rem"><strong>Wajib Pajak:</strong> Sama — orang pribadi atau Badan yang memiliki dan/atau menguasai Alat Berat.</p>
+              <div class="info-pill">ℹ️ Penguasaan = sewa jangka panjang (finance lease). Subyek & WP bisa berbeda jika ada penguasaan tanpa kepemilikan.</div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#fcd34d">📊 Dasar Pengenaan (DPP)</h3>
+              <p>Nilai jual Alat Berat berdasarkan harga rata-rata pasaran umum pada minggu pertama Desember tahun pajak sebelumnya.</p>
+              <div class="dpp-formula">DPP PAB = Nilai Jual Alat Berat
+(Harga Pasar Umum per Desember Tahun Sebelumnya)
+→ Ditetapkan dalam Permendagri setelah pertimbangan Menkeu
+→ Ditinjau ulang max setiap 3 tahun</div>
+            </div>
+            <div class="section-block full-width">
+              <h3 style="color:#f87171">💹 Tarif PAB</h3>
+              <table class="tarif-table">
+                <tr><th>Keterangan</th><th>Tarif</th></tr>
+                <tr><td>Tarif PAB maksimum</td><td class="tarif-low">0,2%</td></tr>
+                <tr><td>Ditetapkan dengan</td><td>Perda Provinsi</td></tr>
+                <tr><td>Pemungutan</td><td>Berdasarkan penetapan Kepala Daerah (SKPD)</td></tr>
+              </table>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#67e8f9">⏰ Saat Terutang</h3>
+              <div class="terutang-timeline">
+                <div class="terutang-item"><span class="terutang-dot"></span>Terhitung sejak WP diakui sah memiliki/menguasai Alat Berat</div>
+                <div class="terutang-item"><span class="terutang-dot"></span>Dikenakan per 12 bulan berturut-turut</div>
+                <div class="terutang-item"><span class="terutang-dot"></span>Dibayar sekaligus di muka</div>
+                <div class="terutang-item"><span class="terutang-dot"></span>Restitusi jika ada keadaan kahar sebelum 12 bulan</div>
+                <div class="terutang-item"><span class="terutang-dot"></span>Dipungut di wilayah tempat penguasaan alat berat</div>
+              </div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#a78bfa">📋 Peraturan Terkait</h3>
+              <div class="reg-tags">
+                <span class="reg-uu">UU HKPD Ps.17–22</span>
+                <span class="reg-pmk">Permendagri (NJ Alat Berat)</span>
+                <span class="reg-pergub">Pergub (tata cara restitusi)</span>
+                <span class="reg-perda">Perda Provinsi</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-study">
+            <div class="case-study-header"><span>📚</span><h3>Studi Kasus &amp; Simulasi PAB</h3></div>
+            <div class="case-scenario">
+              <strong>Kasus:</strong> PT Maju Jaya Konstruksi memiliki 1 unit Excavator Komatsu PC200-8 tahun 2019. Nilai jual berdasarkan Permendagri = Rp800.000.000. Tarif PAB Provinsi Kalimantan Timur = 0,2%.
+            </div>
+            <div class="calc-steps">
+              <div class="calc-step">
+                <div class="calc-step-num">1</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">DPP = Nilai Jual Alat Berat (Permendagri)</div>
+                  <div class="calc-step-value">Rp 800.000.000</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">2</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">PAB = DPP × Tarif (0,2%)</div>
+                  <div class="calc-step-value">Rp 800.000.000 × 0,2% = Rp 1.600.000</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">3</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">PAB dibayar sekaligus di muka untuk 12 bulan</div>
+                  <div class="calc-step-value">= Rp 1.600.000 (total untuk 1 tahun)</div>
+                </div>
+              </div>
+            </div>
+            <div class="calc-result">
+              <span class="calc-result-label">✅ PAB Terutang Per Tahun</span>
+              <span class="calc-result-amount">Rp 1.600.000</span>
+            </div>
+          </div>
+
+          <div class="calc-interactive">
+            <h4>🧮 Kalkulator PAB Interaktif</h4>
+            <div class="calc-inputs">
+              <div class="calc-input-group">
+                <label>Nilai Jual Alat Berat (Rp)</label>
+                <input type="number" id="pab-nilai" placeholder="cth: 800000000" value="800000000">
+              </div>
+              <div class="calc-input-group">
+                <label>Tarif PAB (%) Maks 0,2%</label>
+                <input type="number" id="pab-tarif" placeholder="cth: 0.2" value="0.2" step="0.01">
+              </div>
+              <div class="calc-input-group">
+                <label>Jumlah Unit Alat Berat</label>
+                <input type="number" id="pab-unit" placeholder="cth: 3" value="1">
+              </div>
+            </div>
+            <button class="calc-btn" onclick="calcPAB()">Hitung PAB</button>
+            <div class="calc-output" id="pab-output">
+              <div class="calc-output-row"><span class="calc-output-label">DPP per Unit</span><span class="calc-output-val" id="pab-r1">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">PAB per Unit</span><span class="calc-output-val" id="pab-r2">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">Total PAB (semua unit)</span><span class="calc-output-val" id="pab-r4">-</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 4. PBBKB -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <div class="tax-card" id="pbbkb" data-type="province" data-keywords="pbbkb pajak bahan bakar kendaraan bermotor bensin solar pertamax provinsi">
+        <div class="tax-card-header" onclick="toggleCard('pbbkb')">
+          <div class="tax-icon icon-province">⛽</div>
+          <div class="tax-card-meta">
+            <div class="tax-card-top">
+              <span class="tax-card-name">Pajak Bahan Bakar Kendaraan Bermotor (PBBKB)</span>
+              <span class="tax-card-abbr abbr-province">PROVINSI</span>
+            </div>
+            <div class="tax-card-pasal">Pasal 23–27 UU HKPD | Pasal 1 angka 40–41</div>
+            <div class="tax-card-desc">Pajak atas penggunaan bahan bakar kendaraan bermotor dan alat berat (bensin, solar, gas, dll), dipungut dari produsen/importir BBM.</div>
+          </div>
+          <div class="tax-card-right">
+            <div class="tax-rate-badge">
+              <div class="tax-rate-label">Tarif Maks</div>
+              <div class="tax-rate-value tarif-high">10%</div>
+            </div>
+            <button class="expand-btn" aria-label="Expand detail PBBKB">▼</button>
+          </div>
+        </div>
+
+        <div class="tax-card-body">
+          <div class="sections-grid">
+            <div class="section-block">
+              <h3 style="color:#60a5fa">📖 Definisi</h3>
+              <p>Pajak atas <strong>penyerahan BBKB oleh penyedia BBKB</strong> kepada konsumen atau pengguna kendaraan bermotor. BBKB meliputi semua bahan bakar cair atau gas yang digunakan untuk Kendaraan Bermotor dan Alat Berat (Premium, Pertalite, Pertamax, Solar, Dexlite, Gas, dsb.).</p>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#34d399">🎯 Objek Pajak</h3>
+              <ul>
+                <li>Penyerahan BBKB oleh penyedia ke konsumen</li>
+                <li>Seluruh jenis BBKB: bensin, solar, gas, dll.</li>
+                <li>Termasuk BBKB yang digunakan sendiri</li>
+              </ul>
+              <div class="info-pill">ℹ️ Dipungut oleh produsen/importir BBM, bukan oleh SPBU secara langsung</div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#c4b5fd">👤 Subjek &amp; Wajib Pajak</h3>
+              <p><strong>Subjek Pajak:</strong> Konsumen BBKB (pengemudi/pengguna kendaraan).</p>
+              <p style="margin-top:0.5rem"><strong>Wajib Pajak:</strong> Orang pribadi atau Badan <em>penyedia BBKB</em> (Pertamina, Shell, BP, importir BBM) yang menyerahkan BBKB — termasuk untuk digunakan sendiri.</p>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#fcd34d">📊 DPP</h3>
+              <p>Nilai jual BBKB <strong>sebelum dikenakan PPN</strong>.</p>
+              <div class="dpp-formula">DPP PBBKB = Nilai Jual BBKB (sebelum PPN)
+                  = Harga Jual BBM kepada Konsumen - PPN</div>
+              <div class="note-box">Bagi hasil: 70% PBBKB → Kab/Kota (Pasal 85 ayat 1)</div>
+            </div>
+            <div class="section-block full-width">
+              <h3 style="color:#f87171">💹 Tarif PBBKB</h3>
+              <table class="tarif-table">
+                <tr><th>Jenis Kendaraan</th><th>Tarif</th><th>Keterangan</th></tr>
+                <tr><td>Kendaraan Pribadi</td><td class="tarif-high">Maks 10%</td><td>Ditetapkan dengan Perda</td></tr>
+                <tr><td>Kendaraan Umum</td><td class="tarif-low">Maks 5% (50% dari tarif pribadi)</td><td>Perda bisa lebih rendah</td></tr>
+                <tr><td>Stabilisasi harga (jenis tertentu)</td><td class="tarif-mid">Disesuaikan Perpres</td><td>Pemerintah bisa intervensi</td></tr>
+              </table>
+              <div class="note-box">⚠️ PBBKB masuk dalam harga jual BBM di SPBU — konsumen menanggung tapi WP-nya adalah Pertamina/produsen.</div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#67e8f9">⏰ Saat Terutang</h3>
+              <div class="terutang-timeline">
+                <div class="terutang-item"><span class="terutang-dot"></span>Saat penyerahan BBKB oleh produsen ke agen/SPBU</div>
+                <div class="terutang-item"><span class="terutang-dot"></span>Self assessment — WP hitung sendiri dan lapor</div>
+              </div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#a78bfa">📋 Peraturan Terkait</h3>
+              <div class="reg-tags">
+                <span class="reg-uu">UU HKPD Ps.23–27, Ps.85</span>
+                <span class="reg-pp">PP No. 35/2023</span>
+                <span class="reg-perda">Perda Provinsi</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-study">
+            <div class="case-study-header"><span>📚</span><h3>Studi Kasus &amp; Simulasi PBBKB</h3></div>
+            <div class="case-scenario">
+              <strong>Kasus:</strong> PT Pertamina Patra Niaga menjual Pertalite di Provinsi Jawa Barat. Harga jual sebelum PPN = Rp10.000/liter. Volume penjualan bulan Januari = 10.000.000 liter. Tarif PBBKB Jabar = 7,5%.
+            </div>
+            <div class="calc-steps">
+              <div class="calc-step">
+                <div class="calc-step-num">1</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">DPP = Nilai Jual × Volume (sebelum PPN)</div>
+                  <div class="calc-step-value">Rp 10.000 × 10.000.000 = Rp 100.000.000.000</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">2</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">PBBKB = DPP × Tarif (7,5%)</div>
+                  <div class="calc-step-value">Rp 100.000.000.000 × 7,5% = Rp 7.500.000.000</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">3</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">Bagi hasil ke Kab/Kota (70%)</div>
+                  <div class="calc-step-value">Rp 7.500.000.000 × 70% = Rp 5.250.000.000</div>
+                </div>
+              </div>
+            </div>
+            <div class="calc-result">
+              <span class="calc-result-label">✅ Total PBBKB Terutang</span>
+              <span class="calc-result-amount">Rp 7.500.000.000</span>
+            </div>
+          </div>
+
+          <div class="calc-interactive">
+            <h4>🧮 Kalkulator PBBKB Interaktif</h4>
+            <div class="calc-inputs">
+              <div class="calc-input-group">
+                <label>Harga Jual per Liter (Rp, sebelum PPN)</label>
+                <input type="number" id="pbbkb-harga" placeholder="cth: 10000" value="10000">
+              </div>
+              <div class="calc-input-group">
+                <label>Volume Penyerahan (liter)</label>
+                <input type="number" id="pbbkb-volume" placeholder="cth: 10000000" value="10000000">
+              </div>
+              <div class="calc-input-group">
+                <label>Tarif PBBKB (%)</label>
+                <input type="number" id="pbbkb-tarif" placeholder="cth: 7.5" value="7.5" step="0.5">
+              </div>
+            </div>
+            <button class="calc-btn" onclick="calcPBBKB()">Hitung PBBKB</button>
+            <div class="calc-output" id="pbbkb-output">
+              <div class="calc-output-row"><span class="calc-output-label">DPP (Nilai Jual Total)</span><span class="calc-output-val" id="pbbkb-r1">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">PBBKB Terutang</span><span class="calc-output-val" id="pbbkb-r2">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">Porsi Provinsi (30%)</span><span class="calc-output-val" id="pbbkb-r3">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">Bagi Hasil Kab/Kota (70%)</span><span class="calc-output-val" id="pbbkb-r4">-</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 5. PAP -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <div class="tax-card" id="pap" data-type="province" data-keywords="pap pajak air permukaan sungai danau irigasi provinsi">
+        <div class="tax-card-header" onclick="toggleCard('pap')">
+          <div class="tax-icon icon-province">💧</div>
+          <div class="tax-card-meta">
+            <div class="tax-card-top">
+              <span class="tax-card-name">Pajak Air Permukaan (PAP)</span>
+              <span class="tax-card-abbr abbr-province">PROVINSI</span>
+            </div>
+            <div class="tax-card-pasal">Pasal 28–32 UU HKPD | Pasal 1 angka 52–53</div>
+            <div class="tax-card-desc">Pajak atas pengambilan dan/atau pemanfaatan air permukaan (sungai, danau, waduk, dll.) yang berada di atas permukaan tanah.</div>
+          </div>
+          <div class="tax-card-right">
+            <div class="tax-rate-badge">
+              <div class="tax-rate-label">Tarif Maks</div>
+              <div class="tax-rate-value tarif-mid">10%</div>
+            </div>
+            <button class="expand-btn" aria-label="Expand detail PAP">▼</button>
+          </div>
+        </div>
+
+        <div class="tax-card-body">
+          <div class="sections-grid">
+            <div class="section-block">
+              <h3 style="color:#60a5fa">📖 Definisi</h3>
+              <p>Pajak atas <strong>pengambilan dan/atau pemanfaatan Air Permukaan</strong>. Air Permukaan adalah semua air yang terdapat pada permukaan tanah (sungai, danau, rawa, waduk, embung, bendungan, saluran irigasi).</p>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#34d399">🎯 Objek Pajak</h3>
+              <ul>
+                <li>Pengambilan air permukaan untuk industri/PDAM</li>
+                <li>Pemanfaatan air untuk PLTA, budidaya ikan komersial</li>
+                <li>Pengambilan untuk pertambangan</li>
+              </ul>
+              <div class="excl-list">
+                <div class="excl-item">Keperluan dasar rumah tangga</div>
+                <div class="excl-item">Pengairan pertanian rakyat</div>
+                <div class="excl-item">Perikanan rakyat</div>
+                <div class="excl-item">Keperluan keagamaan</div>
+                <div class="excl-item">Air laut/payau (lautan/daratan)</div>
+              </div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#c4b5fd">👤 Subjek &amp; Wajib Pajak</h3>
+              <p><strong>Subjek = Wajib Pajak:</strong> Orang pribadi atau Badan yang melakukan pengambilan dan/atau pemanfaatan Air Permukaan (PDAM, industri, PLTA, dsb.).</p>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#fcd34d">📊 DPP</h3>
+              <p>Nilai Perolehan Air Permukaan = Harga Dasar Air × Bobot Air Permukaan</p>
+              <div class="dpp-formula">DPP = Harga Dasar Air × Bobot
+
+Harga Dasar Air = biaya pemeliharaan dan pengendalian
+                  sumber daya Air Permukaan
+
+Bobot = koefisien berdasarkan:
+  - Lokasi pengambilan air
+  - Volume air
+  - Kewenangan pengelolaan sumber daya air
+
+→ Ditetapkan Pergub, berpedoman pada Permen PUPR + pertimbangan Menkeu</div>
+              <div class="note-box">Bagi hasil: 50% PAP → Kab/Kota (80% jika sumber air hanya di 1 kab/kota)</div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#f87171">💹 Tarif PAP</h3>
+              <table class="tarif-table">
+                <tr><th>Keterangan</th><th>Tarif</th></tr>
+                <tr><td>Tarif maksimum</td><td class="tarif-mid">10%</td></tr>
+                <tr><td>Ditetapkan dengan</td><td>Perda Provinsi</td></tr>
+              </table>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#67e8f9">⏰ Saat Terutang</h3>
+              <div class="terutang-timeline">
+                <div class="terutang-item"><span class="terutang-dot"></span>Saat pengambilan/pemanfaatan dilakukan</div>
+                <div class="terutang-item"><span class="terutang-dot"></span>Dipungut di wilayah tempat air permukaan berada</div>
+                <div class="terutang-item"><span class="terutang-dot"></span>Berdasarkan penetapan Kepala Daerah (SKPD)</div>
+              </div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#a78bfa">📋 Peraturan Terkait</h3>
+              <div class="reg-tags">
+                <span class="reg-uu">UU HKPD Ps.28–32, Ps.85</span>
+                <span class="reg-pmk">Permen PUPR (harga dasar)</span>
+                <span class="reg-pergub">Pergub (nilai perolehan)</span>
+                <span class="reg-perda">Perda Provinsi</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-study">
+            <div class="case-study-header"><span>📚</span><h3>Studi Kasus &amp; Simulasi PAP</h3></div>
+            <div class="case-scenario">
+              <strong>Kasus:</strong> PT Tirta Industri mengambil air dari Sungai Brantas di Jawa Timur sebesar 50.000 m³/bulan untuk keperluan industri. Harga dasar air = Rp50/m³. Bobot koefisien = 3,0 (industri di lokasi tertentu). Tarif PAP Jatim = 10%.
+            </div>
+            <div class="calc-steps">
+              <div class="calc-step">
+                <div class="calc-step-num">1</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">Nilai Perolehan Air = Harga Dasar × Bobot × Volume</div>
+                  <div class="calc-step-value">Rp 50 × 3,0 × 50.000 = Rp 7.500.000</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">2</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">PAP = DPP × Tarif (10%)</div>
+                  <div class="calc-step-value">Rp 7.500.000 × 10% = Rp 750.000</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">3</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">Bagi hasil ke Kab/Kota (50%)</div>
+                  <div class="calc-step-value">Rp 750.000 × 50% = Rp 375.000</div>
+                </div>
+              </div>
+            </div>
+            <div class="calc-result">
+              <span class="calc-result-label">✅ PAP Terutang per Bulan</span>
+              <span class="calc-result-amount">Rp 750.000</span>
+            </div>
+          </div>
+
+          <div class="calc-interactive">
+            <h4>🧮 Kalkulator PAP Interaktif</h4>
+            <div class="calc-inputs">
+              <div class="calc-input-group">
+                <label>Volume Air (m³)</label>
+                <input type="number" id="pap-vol" placeholder="cth: 50000" value="50000">
+              </div>
+              <div class="calc-input-group">
+                <label>Harga Dasar Air (Rp/m³)</label>
+                <input type="number" id="pap-harga" placeholder="cth: 50" value="50">
+              </div>
+              <div class="calc-input-group">
+                <label>Bobot Koefisien</label>
+                <input type="number" id="pap-bobot" placeholder="cth: 3.0" value="3.0" step="0.1">
+              </div>
+              <div class="calc-input-group">
+                <label>Tarif PAP (%)</label>
+                <input type="number" id="pap-tarif" placeholder="cth: 10" value="10" step="0.5">
+              </div>
+            </div>
+            <button class="calc-btn" onclick="calcPAP()">Hitung PAP</button>
+            <div class="calc-output" id="pap-output">
+              <div class="calc-output-row"><span class="calc-output-label">DPP (Nilai Perolehan Air)</span><span class="calc-output-val" id="pap-r1">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">PAP Terutang</span><span class="calc-output-val" id="pap-r2">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">Porsi Provinsi (50%)</span><span class="calc-output-val" id="pap-r3">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">Bagi Hasil Kab/Kota (50%)</span><span class="calc-output-val" id="pap-r4">-</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 6. PAJAK ROKOK -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <div class="tax-card" id="rokok" data-type="province" data-keywords="pajak rokok cukai sigaret cerutu tembakau provinsi">
+        <div class="tax-card-header" onclick="toggleCard('rokok')">
+          <div class="tax-icon icon-province">🚬</div>
+          <div class="tax-card-meta">
+            <div class="tax-card-top">
+              <span class="tax-card-name">Pajak Rokok</span>
+              <span class="tax-card-abbr abbr-province">PROVINSI</span>
+            </div>
+            <div class="tax-card-pasal">Pasal 33–37 UU HKPD | Pasal 1 angka 54</div>
+            <div class="tax-card-desc">Pungutan atas cukai rokok yang dipungut oleh Pemerintah Pusat (DJBC) dan disetor ke kas daerah provinsi secara proporsional berdasarkan jumlah penduduk.</div>
+          </div>
+          <div class="tax-card-right">
+            <div class="tax-rate-badge">
+              <div class="tax-rate-label">Tarif</div>
+              <div class="tax-rate-value tarif-high">10% Cukai</div>
+            </div>
+            <button class="expand-btn" aria-label="Expand detail Pajak Rokok">▼</button>
+          </div>
+        </div>
+
+        <div class="tax-card-body">
+          <div class="sections-grid">
+            <div class="section-block">
+              <h3 style="color:#60a5fa">📖 Definisi</h3>
+              <p>Pungutan atas <strong>cukai rokok</strong> yang dipungut oleh Pemerintah (DJBC/Kemenkeu). Berbeda dari pajak lain — Pajak Rokok dipungut bersamaan dengan cukai rokok, bukan langsung oleh Pemda. Hasilnya disetor ke provinsi secara proporsional berdasarkan jumlah penduduk.</p>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#34d399">🎯 Objek Pajak</h3>
+              <ul>
+                <li>Konsumsi rokok: sigaret, cerutu, rokok daun, dan bentuk rokok lainnya yang dikenai cukai</li>
+              </ul>
+              <div class="excl-list">
+                <div class="excl-item">Rokok yang tidak dikenai cukai (rokok tanpa cukai)</div>
+              </div>
+              <div class="info-pill">ℹ️ Seluruh jenis rokok yang kena cukai otomatis jadi objek Pajak Rokok</div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#c4b5fd">👤 Subjek &amp; Wajib Pajak</h3>
+              <p><strong>Subjek Pajak:</strong> Konsumen rokok (perokok).</p>
+              <p style="margin-top:0.5rem"><strong>Wajib Pajak:</strong> Pengusaha pabrik rokok/produsen dan importir rokok yang memiliki <em>Nomor Pokok Pengusaha Barang Kena Cukai (NPPBKC)</em>.</p>
+              <p style="margin-top:0.5rem"><strong>Pemungut:</strong> Instansi Pemerintah yang berwenang memungut cukai (DJBC).</p>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#fcd34d">📊 DPP</h3>
+              <p>Cukai rokok yang ditetapkan oleh Pemerintah.</p>
+              <div class="dpp-formula">DPP Pajak Rokok = Besaran Cukai Rokok
+(ditetapkan PMK tentang tarif cukai hasil tembakau)
+
+Bagi hasil: 70% → Kab/Kota (proporsional jumlah penduduk)</div>
+            </div>
+            <div class="section-block full-width">
+              <h3 style="color:#f87171">💹 Tarif Pajak Rokok</h3>
+              <table class="tarif-table">
+                <tr><th>Keterangan</th><th>Nilai</th></tr>
+                <tr><td>Tarif Pajak Rokok</td><td class="tarif-high">10% dari cukai rokok</td></tr>
+                <tr><td>Dipungut oleh</td><td>DJBC (bersamaan dengan cukai)</td></tr>
+                <tr><td>Disetorkan ke</td><td>Kas provinsi (proporsional penduduk)</td></tr>
+                <tr><td>Bagi hasil ke kab/kota</td><td class="tarif-mid">70%</td></tr>
+                <tr><td>Penyisihan untuk Kesehatan</td><td>Min 50% dari pajak rokok → Kesehatan (Pasal 86)</td></tr>
+              </table>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#67e8f9">⏰ Saat Terutang</h3>
+              <div class="terutang-timeline">
+                <div class="terutang-item"><span class="terutang-dot"></span>Saat cukai rokok dipungut DJBC</div>
+                <div class="terutang-item"><span class="terutang-dot"></span>Disetor ke provinsi oleh DJBC</div>
+                <div class="terutang-item"><span class="terutang-dot"></span>Tata cara lebih lanjut: PMK</div>
+              </div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#a78bfa">📋 Peraturan Terkait</h3>
+              <div class="reg-tags">
+                <span class="reg-uu">UU HKPD Ps.33–37, Ps.85</span>
+                <span class="reg-pmk">PMK No. 85/PMK.07/2023</span>
+                <span class="reg-uu">UU Cukai No. 39/2007</span>
+                <span class="reg-pmk">PMK Tarif Cukai Tembakau</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-study">
+            <div class="case-study-header"><span>📚</span><h3>Studi Kasus &amp; Simulasi Pajak Rokok</h3></div>
+            <div class="case-scenario">
+              <strong>Kasus:</strong> PT Gudang Garam Tbk membayar cukai atas Sigaret Kretek Mesin (SKM) sebesar Rp10.000.000.000 ke DJBC bulan Februari. Provinsi Jawa Timur akan menerima bagiannya berdasarkan proporsi penduduk. Populasi Jatim = 40 juta dari total nasional 275 juta (proporsi ≈ 14,55%).
+            </div>
+            <div class="calc-steps">
+              <div class="calc-step">
+                <div class="calc-step-num">1</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">Total Cukai Rokok Nasional Bulan Ini</div>
+                  <div class="calc-step-value">Rp 10.000.000.000</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">2</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">Total Pajak Rokok = Cukai × 10%</div>
+                  <div class="calc-step-value">Rp 10.000.000.000 × 10% = Rp 1.000.000.000</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">3</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">Bagian Jatim (proporsi penduduk 14,55%)</div>
+                  <div class="calc-step-value">Rp 1.000.000.000 × 14,55% = Rp 145.500.000</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">4</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">Bagi hasil kab/kota Jatim (70%)</div>
+                  <div class="calc-step-value">Rp 145.500.000 × 70% = Rp 101.850.000</div>
+                </div>
+              </div>
+            </div>
+            <div class="calc-result">
+              <span class="calc-result-label">✅ Penerimaan Jatim dari Pajak Rokok</span>
+              <span class="calc-result-amount">Rp 145.500.000</span>
+            </div>
+          </div>
+
+          <div class="calc-interactive">
+            <h4>🧮 Kalkulator Pajak Rokok Interaktif</h4>
+            <div class="calc-inputs">
+              <div class="calc-input-group">
+                <label>Total Cukai Rokok Nasional (Rp)</label>
+                <input type="number" id="rok-cukai" placeholder="cth: 10000000000" value="10000000000">
+              </div>
+              <div class="calc-input-group">
+                <label>Proporsi Penduduk Provinsi (%)</label>
+                <input type="number" id="rok-proporsi" placeholder="cth: 14.55" value="14.55" step="0.01">
+              </div>
+            </div>
+            <button class="calc-btn" onclick="calcRokok()">Hitung Pajak Rokok</button>
+            <div class="calc-output" id="rok-output">
+              <div class="calc-output-row"><span class="calc-output-label">Total Pajak Rokok Nasional (10%)</span><span class="calc-output-val" id="rok-r1">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">Bagian Provinsi (proporsi penduduk)</span><span class="calc-output-val" id="rok-r2">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">Bagian Kab/Kota (70%)</span><span class="calc-output-val" id="rok-r3">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">Bagian Provinsi sendiri (30%)</span><span class="calc-output-val" id="rok-r4">-</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 7. PBB-P2 -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <div class="tax-card" id="pbbp2" data-type="kabkot" data-keywords="pbb p2 pajak bumi bangunan perdesaan perkotaan tanah rumah kabupaten kota njop">
+        <div class="tax-card-header" onclick="toggleCard('pbbp2')">
+          <div class="tax-icon icon-kabkot">🏠</div>
+          <div class="tax-card-meta">
+            <div class="tax-card-top">
+              <span class="tax-card-name">PBB Perdesaan &amp; Perkotaan (PBB-P2)</span>
+              <span class="tax-card-abbr abbr-kabkot">KAB/KOTA</span>
+            </div>
+            <div class="tax-card-pasal">Pasal 38–43 UU HKPD | Pasal 1 angka 33–36</div>
+            <div class="tax-card-desc">Pajak atas bumi dan/atau bangunan yang dimiliki, dikuasai, dan/atau dimanfaatkan di wilayah perdesaan dan perkotaan — berbeda dari PBB sektor pertambangan/perkebunan/perhutanan.</div>
+          </div>
+          <div class="tax-card-right">
+            <div class="tax-rate-badge">
+              <div class="tax-rate-label">Tarif Maks</div>
+              <div class="tax-rate-value tarif-low">0,5%</div>
+            </div>
+            <button class="expand-btn" aria-label="Expand detail PBB-P2">▼</button>
+          </div>
+        </div>
+
+        <div class="tax-card-body">
+          <div class="sections-grid">
+            <div class="section-block">
+              <h3 style="color:#60a5fa">📖 Definisi</h3>
+              <p>Pajak atas <strong>Bumi dan/atau Bangunan</strong> yang dimiliki, dikuasai, dan/atau dimanfaatkan oleh orang pribadi atau Badan, <strong>kecuali</strong> kawasan yang digunakan untuk kegiatan usaha perkebunan, perhutanan, dan pertambangan (yang dikenai PBB sektor — pajak pusat).</p>
+              <div class="info-pill">ℹ️ Sejak UU HKPD 2022, PBB-P2 diserahkan penuh ke Kab/Kota (sebelumnya berbagi dengan Pusat)</div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#34d399">🎯 Objek Pajak</h3>
+              <ul>
+                <li>Rumah tinggal, apartemen, rumah susun</li>
+                <li>Tanah kosong, tanah bangunan</li>
+                <li>Perkantoran swasta, pusat perbelanjaan</li>
+                <li>Bumi hasil reklamasi/pengurukan</li>
+              </ul>
+              <div class="excl-list">
+                <div class="excl-item">Kantor Pemerintah (BMN/BMD)</div>
+                <div class="excl-item">Tempat ibadah, panti sosial, kesehatan, pendidikan (nirlaba)</div>
+                <div class="excl-item">Makam/kuburan, peninggalan purbakala</div>
+                <div class="excl-item">Hutan lindung, hutan suaka alam, taman nasional</div>
+                <div class="excl-item">Perwakilan diplomatik</div>
+                <div class="excl-item">Tempat tinggal NJOP tertentu (penetapan Kepala Daerah)</div>
+              </div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#c4b5fd">👤 Subjek &amp; Wajib Pajak</h3>
+              <p>Orang pribadi atau Badan yang secara nyata:</p>
+              <ul>
+                <li>Mempunyai hak atas Bumi</li>
+                <li>Memperoleh manfaat atas Bumi</li>
+                <li>Memiliki, menguasai, atau memperoleh manfaat atas Bangunan</li>
+              </ul>
+              <div class="info-pill">ℹ️ Subjek = Wajib Pajak. Yang "menguasai" secara nyata juga dikenai meski bukan pemilik resmi.</div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#fcd34d">📊 DPP</h3>
+              <p>Nilai Jual Objek Pajak (NJOP), dengan ketentuan:</p>
+              <div class="dpp-formula">NJOP = Harga rata-rata transaksi jual beli wajar
+       (atau perbandingan objek sejenis / nilai perolehan baru)
+
+NJOP TKP (Tidak Kena Pajak) = min Rp10.000.000/WP
+
+NJOP Kena Pajak = 20% s/d 100% × (NJOP - NJOP TKP)
+
+DPP = NJOP Kena Pajak (ditetapkan Kepala Daerah/Perda)
+NJOP ditinjau setiap 3 tahun (objek tertentu: tiap tahun)</div>
+            </div>
+            <div class="section-block full-width">
+              <h3 style="color:#f87171">💹 Tarif PBB-P2</h3>
+              <table class="tarif-table">
+                <tr><th>Jenis Lahan</th><th>Tarif</th></tr>
+                <tr><td>Lahan umum (non pertanian pangan/ternak)</td><td class="tarif-low">Maks 0,5%</td></tr>
+                <tr><td>Lahan produksi pangan dan ternak</td><td class="tarif-low">Lebih rendah dari lahan lainnya</td></tr>
+                <tr><td>Ditetapkan dengan</td><td>Perda Kab/Kota</td></tr>
+              </table>
+              <div class="note-box">Penilaian NJOP diatur lebih lanjut dengan Peraturan Menteri (PMK). Tanggal penetapan pajak: keadaan objek pada <strong>1 Januari</strong> tiap tahun.</div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#67e8f9">⏰ Saat Terutang</h3>
+              <div class="terutang-timeline">
+                <div class="terutang-item"><span class="terutang-dot"></span>Tahun Pajak = 1 tahun kalender</div>
+                <div class="terutang-item"><span class="terutang-dot"></span>Saat yang menentukan = keadaan objek per <strong>1 Januari</strong></div>
+                <div class="terutang-item"><span class="terutang-dot"></span>Tempat terutang = wilayah kab/kota letak objek</div>
+              </div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#a78bfa">📋 Peraturan Terkait</h3>
+              <div class="reg-tags">
+                <span class="reg-uu">UU HKPD Ps.38–43</span>
+                <span class="reg-pp">PP No. 35/2023</span>
+                <span class="reg-pmk">PMK Penilaian PBB-P2</span>
+                <span class="reg-perda">Perda Kab/Kota</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-study">
+            <div class="case-study-header"><span>📚</span><h3>Studi Kasus &amp; Simulasi PBB-P2</h3></div>
+            <div class="case-scenario">
+              <strong>Kasus:</strong> Pak Ahmad memiliki rumah di Surabaya. NJOP Bumi: 200 m² × Rp3.000.000/m² = Rp600.000.000. NJOP Bangunan: 150 m² × Rp2.000.000/m² = Rp300.000.000. NJOP TKP = Rp10.000.000. NJOP yang digunakan = 100% (sesuai Perda Surabaya). Tarif = 0,1% (lahan umum).
+            </div>
+            <div class="calc-steps">
+              <div class="calc-step">
+                <div class="calc-step-num">1</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">Total NJOP = Bumi + Bangunan</div>
+                  <div class="calc-step-value">Rp 600.000.000 + Rp 300.000.000 = Rp 900.000.000</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">2</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">NJOP setelah dikurangi NJOP TKP</div>
+                  <div class="calc-step-value">Rp 900.000.000 - Rp 10.000.000 = Rp 890.000.000</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">3</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">DPP = 100% × NJOP kena pajak</div>
+                  <div class="calc-step-value">100% × Rp 890.000.000 = Rp 890.000.000</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">4</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">PBB-P2 = DPP × Tarif (0,1%)</div>
+                  <div class="calc-step-value">Rp 890.000.000 × 0,1% = Rp 890.000</div>
+                </div>
+              </div>
+            </div>
+            <div class="calc-result">
+              <span class="calc-result-label">✅ PBB-P2 Terutang per Tahun</span>
+              <span class="calc-result-amount">Rp 890.000</span>
+            </div>
+          </div>
+
+          <div class="calc-interactive">
+            <h4>🧮 Kalkulator PBB-P2 Interaktif</h4>
+            <div class="calc-inputs">
+              <div class="calc-input-group">
+                <label>NJOP Bumi (Rp)</label>
+                <input type="number" id="pbb-bumi" placeholder="cth: 600000000" value="600000000">
+              </div>
+              <div class="calc-input-group">
+                <label>NJOP Bangunan (Rp)</label>
+                <input type="number" id="pbb-bang" placeholder="cth: 300000000" value="300000000">
+              </div>
+              <div class="calc-input-group">
+                <label>NJOP TKP (Rp, min 10jt)</label>
+                <input type="number" id="pbb-tkp" placeholder="cth: 10000000" value="10000000">
+              </div>
+              <div class="calc-input-group">
+                <label>% NJOP yang digunakan (%)</label>
+                <input type="number" id="pbb-persen" placeholder="cth: 100" value="100" min="20" max="100">
+              </div>
+              <div class="calc-input-group">
+                <label>Tarif PBB-P2 (%)</label>
+                <input type="number" id="pbb-tarif" placeholder="cth: 0.1" value="0.1" step="0.05">
+              </div>
+            </div>
+            <button class="calc-btn" onclick="calcPBB()">Hitung PBB-P2</button>
+            <div class="calc-output" id="pbb-output">
+              <div class="calc-output-row"><span class="calc-output-label">Total NJOP</span><span class="calc-output-val" id="pbb-r1">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">NJOP setelah dikurangi TKP</span><span class="calc-output-val" id="pbb-r2">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">DPP (% NJOP kena pajak)</span><span class="calc-output-val" id="pbb-r3">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">PBB-P2 Terutang</span><span class="calc-output-val" id="pbb-r4">-</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 8. BPHTB -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <div class="tax-card" id="bphtb" data-type="kabkot" data-keywords="bphtb bea perolehan hak tanah bangunan jual beli hibah waris kabupaten kota">
+        <div class="tax-card-header" onclick="toggleCard('bphtb')">
+          <div class="tax-icon icon-kabkot">📜</div>
+          <div class="tax-card-meta">
+            <div class="tax-card-top">
+              <span class="tax-card-name">Bea Perolehan Hak atas Tanah &amp; Bangunan (BPHTB)</span>
+              <span class="tax-card-abbr abbr-kabkot">KAB/KOTA</span>
+            </div>
+            <div class="tax-card-pasal">Pasal 44–49 UU HKPD | Pasal 1 angka 37–39</div>
+            <div class="tax-card-desc">Pajak atas perolehan hak atas tanah dan/atau bangunan melalui berbagai cara: jual beli, tukar-menukar, hibah, hibah wasiat, waris, lelang, dsb.</div>
+          </div>
+          <div class="tax-card-right">
+            <div class="tax-rate-badge">
+              <div class="tax-rate-label">Tarif Maks</div>
+              <div class="tax-rate-value tarif-mid">5%</div>
+            </div>
+            <button class="expand-btn" aria-label="Expand detail BPHTB">▼</button>
+          </div>
+        </div>
+
+        <div class="tax-card-body">
+          <div class="sections-grid">
+            <div class="section-block">
+              <h3 style="color:#60a5fa">📖 Definisi</h3>
+              <p>Pajak atas <strong>Perolehan Hak atas Tanah dan/atau Bangunan</strong>. Perolehan hak adalah perbuatan atau peristiwa hukum yang mengakibatkan diperolehnya hak atas tanah dan/atau bangunan oleh orang pribadi atau Badan.</p>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#34d399">🎯 Objek Pajak</h3>
+              <p><strong>A. Pemindahan Hak:</strong></p>
+              <ul>
+                <li>Jual beli, tukar-menukar, hibah</li>
+                <li>Hibah wasiat, waris</li>
+                <li>Pemasukan ke perseroan/badan hukum</li>
+                <li>Pemisahan hak → peralihan, penggabungan/peleburan/pemekaran usaha</li>
+                <li>Lelang, hadiah, putusan hakim berkekuatan hukum tetap</li>
+              </ul>
+              <p style="margin-top:0.5rem"><strong>B. Pemberian Hak Baru:</strong></p>
+              <ul>
+                <li>Kelanjutan pelepasan hak</li>
+                <li>Di luar pelepasan hak</li>
+              </ul>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#c4b5fd">👤 Subjek &amp; Wajib Pajak</h3>
+              <p><strong>Subjek = Wajib Pajak:</strong> Orang pribadi atau Badan yang <strong>memperoleh</strong> Hak atas Tanah dan/atau Bangunan (penerima/pembeli).</p>
+              <div class="excl-list">
+                <div class="excl-item">Kantor Pemerintah/Pemda (BMN/BMD)</div>
+                <div class="excl-item">Negara untuk kepentingan umum</div>
+                <div class="excl-item">Perwakilan diplomatik/konsulat</div>
+                <div class="excl-item">Wakaf, ibadah, konversi hak tanpa perubahan nama</div>
+                <div class="excl-item">MBR (Masyarakat Berpenghasilan Rendah)</div>
+              </div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#fcd34d">📊 DPP</h3>
+              <p>Nilai Perolehan Objek Pajak (NPOP):</p>
+              <div class="dpp-formula">• Jual beli → Harga Transaksi
+• Tukar-menukar, hibah, hibah wasiat, waris, 
+  lelang, dll → Nilai Pasar
+• Lelang → Harga dalam risalah lelang
+
+Jika NPOP < NJOP (PBB) → gunakan NJOP PBB
+
+NPOP TKP (pengurang) = min Rp 80.000.000
+Waris/hibah wasiat garis lurus = min Rp 300.000.000
+
+DPP = NPOP - NPOP TKP</div>
+            </div>
+            <div class="section-block full-width">
+              <h3 style="color:#f87171">💹 Tarif BPHTB</h3>
+              <table class="tarif-table">
+                <tr><th>Jenis</th><th>Tarif</th><th>Keterangan</th></tr>
+                <tr><td>Tarif umum</td><td class="tarif-mid">Maks 5%</td><td>Perda Kab/Kota</td></tr>
+                <tr><td>NPOP TKP umum</td><td>Min Rp 80.000.000</td><td>Per perolehan hak pertama WP</td></tr>
+                <tr><td>NPOP TKP waris/hibah wasiat (garis lurus)</td><td>Min Rp 300.000.000</td><td>Perda bisa lebih tinggi</td></tr>
+              </table>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#67e8f9">⏰ Saat Terutang</h3>
+              <div class="terutang-timeline">
+                <div class="terutang-item"><span class="terutang-dot"></span>Jual beli: Tanggal PPJB (Perjanjian Pengikatan Jual Beli)</div>
+                <div class="terutang-item"><span class="terutang-dot"></span>Hibah/Tukar/dll: Tanggal penandatanganan akta</div>
+                <div class="terutang-item"><span class="terutang-dot"></span>Waris: Tanggal pendaftaran peralihan hak di BPN</div>
+                <div class="terutang-item"><span class="terutang-dot"></span>Putusan Hakim: Tanggal putusan berkekuatan hukum tetap</div>
+                <div class="terutang-item"><span class="terutang-dot"></span>Lelang: Tanggal penunjukan pemenang lelang</div>
+              </div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#a78bfa">📋 Peraturan Terkait</h3>
+              <div class="reg-tags">
+                <span class="reg-uu">UU HKPD Ps.44–49</span>
+                <span class="reg-pp">PP No. 35/2023</span>
+                <span class="reg-pmk">PMK Penilaian Properti</span>
+                <span class="reg-perda">Perda Kab/Kota</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-study">
+            <div class="case-study-header"><span>📚</span><h3>Studi Kasus &amp; Simulasi BPHTB</h3></div>
+            <div class="case-scenario">
+              <strong>Kasus:</strong> Bu Dewi membeli rumah di Bekasi seharga Rp850.000.000 (harga transaksi). NJOP PBB = Rp750.000.000. NPOP TKP = Rp80.000.000 (perolehan pertama). Tarif BPHTB Bekasi = 5%.
+            </div>
+            <div class="calc-steps">
+              <div class="calc-step">
+                <div class="calc-step-num">1</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">NPOP = Harga Transaksi (jual beli)</div>
+                  <div class="calc-step-value">Rp 850.000.000 (lebih tinggi dari NJOP, maka pakai harga transaksi)</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">2</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">DPP = NPOP - NPOP TKP</div>
+                  <div class="calc-step-value">Rp 850.000.000 - Rp 80.000.000 = Rp 770.000.000</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">3</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">BPHTB = DPP × Tarif (5%)</div>
+                  <div class="calc-step-value">Rp 770.000.000 × 5% = Rp 38.500.000</div>
+                </div>
+              </div>
+            </div>
+            <div class="calc-result">
+              <span class="calc-result-label">✅ BPHTB Terutang</span>
+              <span class="calc-result-amount">Rp 38.500.000</span>
+            </div>
+          </div>
+
+          <div class="calc-interactive">
+            <h4>🧮 Kalkulator BPHTB Interaktif</h4>
+            <div class="calc-inputs">
+              <div class="calc-input-group">
+                <label>NPOP / Harga Transaksi (Rp)</label>
+                <input type="number" id="bphtb-npop" placeholder="cth: 850000000" value="850000000">
+              </div>
+              <div class="calc-input-group">
+                <label>NJOP PBB Tahun Berjalan (Rp)</label>
+                <input type="number" id="bphtb-njop" placeholder="cth: 750000000" value="750000000">
+              </div>
+              <div class="calc-input-group">
+                <label>Jenis Perolehan</label>
+                <select id="bphtb-jenis">
+                  <option value="umum">Umum (Jual Beli, Hibah, dll)</option>
+                  <option value="waris">Waris/Hibah Wasiat (Garis Lurus)</option>
+                </select>
+              </div>
+              <div class="calc-input-group">
+                <label>Tarif BPHTB (%)</label>
+                <input type="number" id="bphtb-tarif" placeholder="cth: 5" value="5" step="0.5">
+              </div>
+            </div>
+            <button class="calc-btn" onclick="calcBPHTB()">Hitung BPHTB</button>
+            <div class="calc-output" id="bphtb-output">
+              <div class="calc-output-row"><span class="calc-output-label">NPOP yang Digunakan</span><span class="calc-output-val" id="bphtb-r1">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">NPOP TKP</span><span class="calc-output-val" id="bphtb-r2">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">DPP (NPOP - TKP)</span><span class="calc-output-val" id="bphtb-r3">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">BPHTB Terutang</span><span class="calc-output-val" id="bphtb-r4">-</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 9. PBJT -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <div class="tax-card" id="pbjt" data-type="kabkot" data-keywords="pbjt pajak barang jasa tertentu makanan minuman hotel restoran listrik parkir hiburan karaoke spa kabupaten kota">
+        <div class="tax-card-header" onclick="toggleCard('pbjt')">
+          <div class="tax-icon icon-kabkot">🍽️</div>
+          <div class="tax-card-meta">
+            <div class="tax-card-top">
+              <span class="tax-card-name">Pajak Barang &amp; Jasa Tertentu (PBJT)</span>
+              <span class="tax-card-abbr abbr-kabkot">KAB/KOTA</span>
+            </div>
+            <div class="tax-card-pasal">Pasal 50–59 UU HKPD | Pasal 1 angka 42–49</div>
+            <div class="tax-card-desc">Pajak yang dibayarkan konsumen akhir atas konsumsi 5 kelompok barang/jasa: Makanan & Minuman, Tenaga Listrik, Jasa Perhotelan, Jasa Parkir, dan Jasa Kesenian & Hiburan.</div>
+          </div>
+          <div class="tax-card-right">
+            <div class="tax-rate-badge">
+              <div class="tax-rate-label">Tarif</div>
+              <div class="tax-rate-value tarif-mid">5–75%</div>
+            </div>
+            <button class="expand-btn" aria-label="Expand detail PBJT">▼</button>
+          </div>
+        </div>
+
+        <div class="tax-card-body">
+          <div class="sections-grid">
+            <div class="section-block">
+              <h3 style="color:#60a5fa">📖 Definisi</h3>
+              <p>Pajak yang dibayarkan oleh <strong>konsumen akhir</strong> atas konsumsi barang dan/atau jasa tertentu. PBJT menggabungkan beberapa pajak lama: Pajak Hotel, Pajak Restoran, Pajak Hiburan, Pajak Penerangan Jalan, dan Pajak Parkir menjadi satu jenis pajak.</p>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#34d399">🎯 5 Kelompok Objek Pajak</h3>
+              <ul>
+                <li><strong>Makanan &amp; Minuman</strong> — Restoran, katering</li>
+                <li><strong>Tenaga Listrik</strong> — Penggunaan listrik oleh pengguna akhir</li>
+                <li><strong>Jasa Perhotelan</strong> — Hotel, vila, hostel, glamping, dll.</li>
+                <li><strong>Jasa Parkir</strong> — Tempat parkir, parkir valet</li>
+                <li><strong>Jasa Kesenian &amp; Hiburan</strong> — Bioskop, karaoke, spa, wahana, dll.</li>
+              </ul>
+            </div>
+            <div class="section-block full-width">
+              <h3 style="color:#f87171">💹 Tarif PBJT — Rincian per Kelompok</h3>
+              <table class="tarif-table">
+                <tr><th>Objek PBJT</th><th>Tarif</th><th>Keterangan</th></tr>
+                <tr><td>Makanan &amp; Minuman (restoran, katering)</td><td class="tarif-mid">Maks 10%</td><td>Self assessment WP</td></tr>
+                <tr><td>Tenaga Listrik (umum)</td><td class="tarif-mid">Maks 10%</td><td>PLN sebagai pemungut</td></tr>
+                <tr><td>Tenaga Listrik — industri, pertambangan minyak/gas (sumber lain)</td><td class="tarif-low">Maks 3%</td><td>Khusus industri besar</td></tr>
+                <tr><td>Tenaga Listrik — dihasilkan sendiri</td><td class="tarif-low">Maks 1,5%</td><td>Genset pribadi</td></tr>
+                <tr><td>Jasa Perhotelan</td><td class="tarif-mid">Maks 10%</td><td>Tarif termasuk room rate</td></tr>
+                <tr><td>Jasa Parkir</td><td class="tarif-mid">Maks 10%</td><td>Termasuk parkir valet</td></tr>
+                <tr><td>Jasa Kesenian &amp; Hiburan (umum)</td><td class="tarif-mid">Maks 10%</td><td>Bioskop, konser, olahraga</td></tr>
+                <tr><td><strong>Diskotek, karaoke, kelab malam, bar, mandi uap/spa</strong></td><td class="tarif-high">40%–75%</td><td>Tarif tertinggi — Perda</td></tr>
+              </table>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#c4b5fd">👤 Subjek &amp; Wajib Pajak</h3>
+              <p><strong>Subjek Pajak:</strong> Konsumen barang dan jasa tertentu (tamu hotel, pengunjung restoran, dll).</p>
+              <p style="margin-top:0.5rem"><strong>Wajib Pajak:</strong> Orang pribadi atau Badan yang melakukan penjualan, penyerahan, dan/atau konsumsi barang dan jasa tertentu (pemilik restoran, hotel, parkir, dsb.).</p>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#fcd34d">📊 DPP</h3>
+              <div class="dpp-formula">DPP = Jumlah yang Dibayarkan oleh Konsumen
+
+Jika tidak ada pembayaran → Harga jual sejenis 
+yang berlaku di daerah tersebut</div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#67e8f9">⏰ Saat Terutang</h3>
+              <div class="terutang-timeline">
+                <div class="terutang-item"><span class="terutang-dot"></span>Sejak saat pembayaran/penyerahan/konsumsi dilakukan</div>
+                <div class="terutang-item"><span class="terutang-dot"></span>Dipungut di tempat penjualan/penyerahan/konsumsi terjadi</div>
+                <div class="terutang-item"><span class="terutang-dot"></span>Self assessment (WP hitung & lapor sendiri)</div>
+              </div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#a78bfa">📋 Peraturan Terkait</h3>
+              <div class="reg-tags">
+                <span class="reg-uu">UU HKPD Ps.50–59</span>
+                <span class="reg-pp">PP No. 35/2023</span>
+                <span class="reg-perda">Perda Kab/Kota</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-study">
+            <div class="case-study-header"><span>📚</span><h3>Studi Kasus &amp; Simulasi PBJT</h3></div>
+            <div class="case-scenario">
+              <strong>Kasus A (Restoran):</strong> Pak Eko makan di restoran Surabaya. Tagihan makanan = Rp500.000 + Service charge 10% = Rp50.000. Total sebelum pajak = Rp550.000. Tarif PBJT Makanan/Minuman Surabaya = 10%.
+              <br><br>
+              <strong>Kasus B (Karaoke):</strong> Sekelompok teman karaoke di Semarang 3 jam, biaya Rp1.500.000. Tarif PBJT Hiburan Diskotek/Karaoke Semarang = 40%.
+            </div>
+            <div class="calc-steps">
+              <div class="calc-step">
+                <div class="calc-step-num">1A</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">PBJT Restoran = Total Tagihan × 10%</div>
+                  <div class="calc-step-value">Rp 550.000 × 10% = Rp 55.000</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">2A</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">Total yang dibayar konsumen</div>
+                  <div class="calc-step-value">Rp 550.000 + Rp 55.000 = Rp 605.000</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">1B</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">PBJT Karaoke = Biaya × 40%</div>
+                  <div class="calc-step-value">Rp 1.500.000 × 40% = Rp 600.000</div>
+                </div>
+              </div>
+            </div>
+            <div class="calc-result">
+              <span class="calc-result-label">✅ PBJT Restoran | PBJT Karaoke</span>
+              <span class="calc-result-amount">Rp 55.000 | Rp 600.000</span>
+            </div>
+          </div>
+
+          <div class="calc-interactive">
+            <h4>🧮 Kalkulator PBJT Interaktif</h4>
+            <div class="calc-inputs">
+              <div class="calc-input-group">
+                <label>Jumlah Tagihan (Rp)</label>
+                <input type="number" id="pbjt-tagihan" placeholder="cth: 550000" value="550000">
+              </div>
+              <div class="calc-input-group">
+                <label>Jenis PBJT</label>
+                <select id="pbjt-jenis" onchange="updatePBJTtarif()">
+                  <option value="10">Makanan/Minuman (maks 10%)</option>
+                  <option value="10">Jasa Perhotelan (maks 10%)</option>
+                  <option value="10">Jasa Parkir (maks 10%)</option>
+                  <option value="10">Hiburan Umum (maks 10%)</option>
+                  <option value="10">Listrik Umum (maks 10%)</option>
+                  <option value="3">Listrik Industri/Tambang (maks 3%)</option>
+                  <option value="1.5">Listrik Dihasilkan Sendiri (maks 1,5%)</option>
+                  <option value="40">Karaoke/Diskotek/Bar/Spa (min 40%)</option>
+                </select>
+              </div>
+              <div class="calc-input-group">
+                <label>Tarif PBJT (%)</label>
+                <input type="number" id="pbjt-tarif" placeholder="cth: 10" value="10" step="0.5">
+              </div>
+            </div>
+            <button class="calc-btn" onclick="calcPBJT()">Hitung PBJT</button>
+            <div class="calc-output" id="pbjt-output">
+              <div class="calc-output-row"><span class="calc-output-label">DPP (Jumlah Tagihan)</span><span class="calc-output-val" id="pbjt-r1">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">PBJT Terutang</span><span class="calc-output-val" id="pbjt-r2">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">Total Bayar Konsumen</span><span class="calc-output-val" id="pbjt-r3">-</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 10. PAJAK REKLAME -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <div class="tax-card" id="reklame" data-type="kabkot" data-keywords="pajak reklame billboard iklan spanduk videotron megatron kabupaten kota">
+        <div class="tax-card-header" onclick="toggleCard('reklame')">
+          <div class="tax-icon icon-kabkot">📢</div>
+          <div class="tax-card-meta">
+            <div class="tax-card-top">
+              <span class="tax-card-name">Pajak Reklame</span>
+              <span class="tax-card-abbr abbr-kabkot">KAB/KOTA</span>
+            </div>
+            <div class="tax-card-pasal">Pasal 60–64 UU HKPD | Pasal 1 angka 50–51</div>
+            <div class="tax-card-desc">Pajak atas penyelenggaraan reklame — segala media komersial yang dirancang untuk memperkenalkan, mempromosikan, atau menarik perhatian umum.</div>
+          </div>
+          <div class="tax-card-right">
+            <div class="tax-rate-badge">
+              <div class="tax-rate-label">Tarif Maks</div>
+              <div class="tax-rate-value tarif-high">25%</div>
+            </div>
+            <button class="expand-btn" aria-label="Expand detail Pajak Reklame">▼</button>
+          </div>
+        </div>
+
+        <div class="tax-card-body">
+          <div class="sections-grid">
+            <div class="section-block">
+              <h3 style="color:#60a5fa">📖 Definisi</h3>
+              <p>Pajak atas <strong>penyelenggaraan Reklame</strong>. Reklame adalah benda, alat, perbuatan, atau media yang dirancang untuk tujuan komersial memperkenalkan, menganjurkan, mempromosikan, atau menarik perhatian umum terhadap sesuatu.</p>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#34d399">🎯 Objek Pajak</h3>
+              <ul>
+                <li>Reklame papan/billboard/videotron/megatron</li>
+                <li>Reklame kain (spanduk, banner, umbul-umbul)</li>
+                <li>Reklame melekat/stiker</li>
+                <li>Reklame selebaran</li>
+                <li>Reklame berjalan (termasuk di kendaraan)</li>
+                <li>Reklame udara, apung, film/slide, peragaan</li>
+              </ul>
+              <div class="excl-list">
+                <div class="excl-item">Reklame melalui internet, TV, radio, koran</div>
+                <div class="excl-item">Label/merek produk pada barang dagangan</div>
+                <div class="excl-item">Nama pengenal usaha/profesi di area sendiri</div>
+                <div class="excl-item">Reklame Pemerintah/Pemda</div>
+                <div class="excl-item">Reklame kegiatan politik/sosial/keagamaan non-komersial</div>
+              </div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#c4b5fd">👤 Subjek &amp; Wajib Pajak</h3>
+              <p><strong>Subjek Pajak:</strong> Orang pribadi atau Badan yang <em>menggunakan</em> Reklame (pengiklan/pemasang).</p>
+              <p style="margin-top:0.5rem"><strong>Wajib Pajak:</strong> Orang pribadi atau Badan yang <em>menyelenggarakan</em> Reklame (bisa pemilik media reklame atau pengiklan langsung).</p>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#fcd34d">📊 DPP</h3>
+              <p>Nilai Sewa Reklame:</p>
+              <div class="dpp-formula">• Jika pihak ketiga → Nilai Kontrak Reklame
+• Jika diselenggarakan sendiri → Nilai dihitung 
+  berdasarkan: jenis, bahan, lokasi, waktu tayang,
+  jangka waktu, jumlah, dan ukuran media reklame
+• Ditetapkan dengan Perkada (Peraturan Kepala Daerah)</div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#f87171">💹 Tarif</h3>
+              <table class="tarif-table">
+                <tr><th>Keterangan</th><th>Tarif</th></tr>
+                <tr><td>Tarif maksimum</td><td class="tarif-high">25%</td></tr>
+                <tr><td>Ditetapkan dengan</td><td>Perda Kab/Kota</td></tr>
+                <tr><td>Reklame berjalan</td><td>Dipungut di tempat usaha penyelenggara terdaftar</td></tr>
+              </table>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#67e8f9">⏰ Saat Terutang</h3>
+              <div class="terutang-timeline">
+                <div class="terutang-item"><span class="terutang-dot"></span>Saat penyelenggaraan reklame</div>
+                <div class="terutang-item"><span class="terutang-dot"></span>Dipungut di wilayah tempat reklame diselenggarakan</div>
+                <div class="terutang-item"><span class="terutang-dot"></span>Berdasarkan penetapan Kepala Daerah (SKPD)</span></div>
+              </div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#a78bfa">📋 Peraturan Terkait</h3>
+              <div class="reg-tags">
+                <span class="reg-uu">UU HKPD Ps.60–64</span>
+                <span class="reg-pp">PP No. 35/2023</span>
+                <span class="reg-perda">Perda Kab/Kota</span>
+                <span class="reg-pergub">Perkada (nilai sewa reklame)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-study">
+            <div class="case-study-header"><span>📚</span><h3>Studi Kasus &amp; Simulasi Pajak Reklame</h3></div>
+            <div class="case-scenario">
+              <strong>Kasus:</strong> Sebuah merek minuman memasang billboard di Jakarta Selatan selama 1 bulan, dengan kontrak sewa media reklame Rp12.000.000. Tarif Pajak Reklame Jakarta = 25%.
+            </div>
+            <div class="calc-steps">
+              <div class="calc-step">
+                <div class="calc-step-num">1</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">DPP = Nilai Kontrak Reklame</div>
+                  <div class="calc-step-value">Rp 12.000.000</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">2</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">Pajak Reklame = DPP × Tarif (25%)</div>
+                  <div class="calc-step-value">Rp 12.000.000 × 25% = Rp 3.000.000</div>
+                </div>
+              </div>
+            </div>
+            <div class="calc-result">
+              <span class="calc-result-label">✅ Pajak Reklame Terutang</span>
+              <span class="calc-result-amount">Rp 3.000.000</span>
+            </div>
+          </div>
+
+          <div class="calc-interactive">
+            <h4>🧮 Kalkulator Pajak Reklame Interaktif</h4>
+            <div class="calc-inputs">
+              <div class="calc-input-group">
+                <label>Nilai Sewa/Kontrak Reklame (Rp)</label>
+                <input type="number" id="rek-nilai" placeholder="cth: 12000000" value="12000000">
+              </div>
+              <div class="calc-input-group">
+                <label>Tarif Pajak Reklame (%)</label>
+                <input type="number" id="rek-tarif" placeholder="cth: 25" value="25" step="1">
+              </div>
+              <div class="calc-input-group">
+                <label>Durasi (hari)</label>
+                <input type="number" id="rek-hari" placeholder="cth: 30" value="30">
+              </div>
+            </div>
+            <button class="calc-btn" onclick="calcReklame()">Hitung Pajak Reklame</button>
+            <div class="calc-output" id="rek-output">
+              <div class="calc-output-row"><span class="calc-output-label">DPP (Nilai Sewa)</span><span class="calc-output-val" id="rek-r1">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">Pajak Reklame Terutang</span><span class="calc-output-val" id="rek-r2">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">Total Biaya (Sewa + Pajak)</span><span class="calc-output-val" id="rek-r3">-</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 11. PAT -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <div class="tax-card" id="pat" data-type="kabkot" data-keywords="pat pajak air tanah sumur bor artesis industri kabupaten kota">
+        <div class="tax-card-header" onclick="toggleCard('pat')">
+          <div class="tax-icon icon-kabkot">🌊</div>
+          <div class="tax-card-meta">
+            <div class="tax-card-top">
+              <span class="tax-card-name">Pajak Air Tanah (PAT)</span>
+              <span class="tax-card-abbr abbr-kabkot">KAB/KOTA</span>
+            </div>
+            <div class="tax-card-pasal">Pasal 65–70 UU HKPD | Pasal 1 angka 55–56</div>
+            <div class="tax-card-desc">Pajak atas pengambilan dan/atau pemanfaatan air tanah (sumur bor, artesis, dll.) di bawah permukaan bumi untuk keperluan industri/usaha.</div>
+          </div>
+          <div class="tax-card-right">
+            <div class="tax-rate-badge">
+              <div class="tax-rate-label">Tarif Maks</div>
+              <div class="tax-rate-value tarif-high">20%</div>
+            </div>
+            <button class="expand-btn" aria-label="Expand detail PAT">▼</button>
+          </div>
+        </div>
+
+        <div class="tax-card-body">
+          <div class="sections-grid">
+            <div class="section-block">
+              <h3 style="color:#60a5fa">📖 Definisi</h3>
+              <p>Pajak atas <strong>pengambilan dan/atau pemanfaatan Air Tanah</strong>. Air Tanah adalah air yang terdapat di dalam lapisan tanah atau batuan di bawah permukaan tanah (sumur bor, mata air, artesis).</p>
+              <div class="info-pill">ℹ️ PAT dikenakan oleh Kab/Kota — berbeda dari PAP (provinsi) yang untuk air permukaan</div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#34d399">🎯 Objek Pajak</h3>
+              <ul>
+                <li>Pengambilan air tanah oleh industri</li>
+                <li>Pemanfaatan air tanah untuk hotel/perkantoran</li>
+                <li>Penggunaan sumur bor komersial</li>
+              </ul>
+              <div class="excl-list">
+                <div class="excl-item">Keperluan dasar rumah tangga</div>
+                <div class="excl-item">Pengairan pertanian rakyat</div>
+                <div class="excl-item">Perikanan rakyat</div>
+                <div class="excl-item">Peternakan rakyat</div>
+                <div class="excl-item">Keperluan keagamaan</div>
+              </div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#c4b5fd">👤 Subjek &amp; Wajib Pajak</h3>
+              <p><strong>Subjek = Wajib Pajak:</strong> Orang pribadi atau Badan yang melakukan pengambilan dan/atau pemanfaatan Air Tanah.</p>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#fcd34d">📊 DPP</h3>
+              <div class="dpp-formula">DPP = Nilai Perolehan Air Tanah
+     = Harga Air Baku × Bobot Air Tanah
+
+Harga Air Baku = biaya pemeliharaan & pengendalian
+                 sumber daya Air Tanah
+
+Bobot Air Tanah = koefisien berdasarkan:
+  - Jenis sumber air
+  - Lokasi sumber air  
+  - Tujuan pengambilan
+  - Volume air
+  - Kualitas air
+  - Tingkat kerusakan lingkungan
+
+→ Ditetapkan Pergub, berpedoman pada Permen ESDM</div>
+            </div>
+            <div class="section-block full-width">
+              <h3 style="color:#f87171">💹 Tarif PAT</h3>
+              <table class="tarif-table">
+                <tr><th>Keterangan</th><th>Tarif</th></tr>
+                <tr><td>Tarif maksimum</td><td class="tarif-high">20%</td></tr>
+                <tr><td>Ditetapkan dengan</td><td>Perda Kab/Kota</td></tr>
+                <tr><td>Penggunaan earmarked</td><td>Sebagian untuk pengelolaan air tanah (Pasal 86)</td></tr>
+              </table>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#67e8f9">⏰ Saat Terutang</h3>
+              <div class="terutang-timeline">
+                <div class="terutang-item"><span class="terutang-dot"></span>Sejak pengambilan dan/atau pemanfaatan air tanah</div>
+                <div class="terutang-item"><span class="terutang-dot"></span>Dipungut di wilayah tempat pengambilan/pemanfaatan</div>
+                <div class="terutang-item"><span class="terutang-dot"></span>Berdasarkan penetapan Kepala Daerah (SKPD)</div>
+              </div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#a78bfa">📋 Peraturan Terkait</h3>
+              <div class="reg-tags">
+                <span class="reg-uu">UU HKPD Ps.65–70, Ps.86</span>
+                <span class="reg-pmk">Permen ESDM (nilai perolehan)</span>
+                <span class="reg-pergub">Pergub</span>
+                <span class="reg-perda">Perda Kab/Kota</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-study">
+            <div class="case-study-header"><span>📚</span><h3>Studi Kasus &amp; Simulasi PAT</h3></div>
+            <div class="case-scenario">
+              <strong>Kasus:</strong> PT Aqua Golden Mississippi mengambil air tanah dari sumur bor di Bekasi sebesar 20.000 m³/bulan. Harga air baku = Rp30/m³. Bobot = 5,0 (industri AMDK, lokasi kritis). Tarif PAT Bekasi = 20%.
+            </div>
+            <div class="calc-steps">
+              <div class="calc-step">
+                <div class="calc-step-num">1</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">Nilai Perolehan Air Tanah = Harga Baku × Bobot × Volume</div>
+                  <div class="calc-step-value">Rp 30 × 5,0 × 20.000 = Rp 3.000.000</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">2</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">PAT = DPP × Tarif (20%)</div>
+                  <div class="calc-step-value">Rp 3.000.000 × 20% = Rp 600.000</div>
+                </div>
+              </div>
+            </div>
+            <div class="calc-result">
+              <span class="calc-result-label">✅ PAT Terutang per Bulan</span>
+              <span class="calc-result-amount">Rp 600.000</span>
+            </div>
+          </div>
+
+          <div class="calc-interactive">
+            <h4>🧮 Kalkulator PAT Interaktif</h4>
+            <div class="calc-inputs">
+              <div class="calc-input-group">
+                <label>Volume Air Tanah (m³)</label>
+                <input type="number" id="pat-vol" placeholder="cth: 20000" value="20000">
+              </div>
+              <div class="calc-input-group">
+                <label>Harga Air Baku (Rp/m³)</label>
+                <input type="number" id="pat-harga" placeholder="cth: 30" value="30">
+              </div>
+              <div class="calc-input-group">
+                <label>Bobot Koefisien</label>
+                <input type="number" id="pat-bobot" placeholder="cth: 5.0" value="5.0" step="0.1">
+              </div>
+              <div class="calc-input-group">
+                <label>Tarif PAT (%)</label>
+                <input type="number" id="pat-tarif" placeholder="cth: 20" value="20" step="1">
+              </div>
+            </div>
+            <button class="calc-btn" onclick="calcPAT()">Hitung PAT</button>
+            <div class="calc-output" id="pat-output">
+              <div class="calc-output-row"><span class="calc-output-label">DPP (Nilai Perolehan Air Tanah)</span><span class="calc-output-val" id="pat-r1">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">PAT Terutang</span><span class="calc-output-val" id="pat-r2">-</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 12. PAJAK MBLB -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <div class="tax-card" id="mblb" data-type="kabkot" data-keywords="pajak mblb mineral bukan logam batuan pasir batu kapur granit kabupaten kota tambang">
+        <div class="tax-card-header" onclick="toggleCard('mblb')">
+          <div class="tax-icon icon-kabkot">⛏️</div>
+          <div class="tax-card-meta">
+            <div class="tax-card-top">
+              <span class="tax-card-name">Pajak Mineral Bukan Logam &amp; Batuan (Pajak MBLB)</span>
+              <span class="tax-card-abbr abbr-kabkot">KAB/KOTA</span>
+            </div>
+            <div class="tax-card-pasal">Pasal 71–75 UU HKPD | Pasal 1 angka 57–58</div>
+            <div class="tax-card-desc">Pajak atas kegiatan pengambilan mineral bukan logam dan batuan (pasir, batu kapur, granit, tanah liat, dll.) dari sumber alam untuk dimanfaatkan.</div>
+          </div>
+          <div class="tax-card-right">
+            <div class="tax-rate-badge">
+              <div class="tax-rate-label">Tarif Maks</div>
+              <div class="tax-rate-value tarif-high">20%</div>
+            </div>
+            <button class="expand-btn" aria-label="Expand detail Pajak MBLB">▼</button>
+          </div>
+        </div>
+
+        <div class="tax-card-body">
+          <div class="sections-grid">
+            <div class="section-block">
+              <h3 style="color:#60a5fa">📖 Definisi</h3>
+              <p>Pajak atas <strong>kegiatan pengambilan Mineral Bukan Logam dan Batuan (MBLB)</strong> dari sumber alam di dalam dan/atau di permukaan bumi untuk dimanfaatkan. MBLB adalah mineral bukan logam dan batuan sesuai UU Minerba.</p>
+            </div>
+            <div class="section-block full-width">
+              <h3 style="color:#34d399">🎯 Objek Pajak — Jenis MBLB</h3>
+              <p style="font-size:0.75rem; color:var(--text-muted); margin-bottom:0.5rem">Mencakup 43+ jenis mineral, antara lain:</p>
+              <div style="display:grid; grid-template-columns: repeat(4,1fr); gap:0.3rem; font-size:0.7rem; color:var(--text-secondary)">
+                <span>• Asbes</span><span>• Batu Kapur</span><span>• Granit/Andesit</span><span>• Kaolin</span>
+                <span>• Marmer</span><span>• Pasir &amp; Kerikil</span><span>• Tanah Liat</span><span>• Gips</span>
+                <span>• Batu Apung</span><span>• Bentonit</span><span>• Dolomit</span><span>• Feldspar</span>
+                <span>• Fosfat</span><span>• Kalsit</span><span>• Obsidian</span><span>• Zeolit</span>
+                <span>• Basal</span><span>• Belerang</span><span>• Tras</span><span>+ 25 jenis lainnya</span>
+              </div>
+              <div class="excl-list" style="margin-top:0.5rem">
+                <div class="excl-item">Keperluan rumah tangga (tidak diperjualbelikan)</div>
+                <div class="excl-item">Pemancangan tiang listrik/telepon, penanaman kabel/pipa</div>
+              </div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#c4b5fd">👤 Subjek &amp; Wajib Pajak</h3>
+              <p><strong>Subjek = Wajib Pajak:</strong> Orang pribadi atau Badan yang <strong>mengambil</strong> MBLB (pemegang IUP MBLB).</p>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#fcd34d">📊 DPP</h3>
+              <div class="dpp-formula">DPP = Nilai Jual Hasil Pengambilan MBLB
+     = Volume/Tonase Pengambilan × Harga Patokan
+
+Harga Patokan = harga jual rata-rata per jenis MBLB 
+                pada mulut tambang di wilayah daerah
+→ Ditetapkan sesuai ketentuan UU Minerba</div>
+            </div>
+            <div class="section-block full-width">
+              <h3 style="color:#f87171">💹 Tarif Pajak MBLB</h3>
+              <table class="tarif-table">
+                <tr><th>Wilayah</th><th>Tarif Maks</th><th>Keterangan</th></tr>
+                <tr><td>Kab/Kota umum</td><td class="tarif-high">20%</td><td>Perda Kab/Kota</td></tr>
+                <tr><td>Provinsi tanpa kab/kota otonom</td><td class="tarif-high">25%</td><td>Perda Provinsi</td></tr>
+                <tr><td>Opsen oleh Provinsi</td><td class="tarif-mid">25% dari pajak pokok</td><td>Dipungut bersamaan</td></tr>
+              </table>
+              <div class="note-box">⚠️ Pajak MBLB (Kab/Kota) dikenai Opsen oleh Provinsi sebesar 25%. Dipungut bersamaan dengan pajak pokoknya.</div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#67e8f9">⏰ Saat Terutang</h3>
+              <div class="terutang-timeline">
+                <div class="terutang-item"><span class="terutang-dot"></span>Saat pengambilan MBLB dilakukan</div>
+                <div class="terutang-item"><span class="terutang-dot"></span>Dipungut di wilayah tempat pengambilan MBLB</div>
+                <div class="terutang-item"><span class="terutang-dot"></span>Self assessment (WP hitung sendiri)</div>
+              </div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#a78bfa">📋 Peraturan Terkait</h3>
+              <div class="reg-tags">
+                <span class="reg-uu">UU HKPD Ps.71–75, Ps.81–84</span>
+                <span class="reg-uu">UU Minerba No.3/2020</span>
+                <span class="reg-pp">PP No. 35/2023</span>
+                <span class="reg-perda">Perda Kab/Kota &amp; Perda Provinsi</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-study">
+            <div class="case-study-header"><span>📚</span><h3>Studi Kasus &amp; Simulasi Pajak MBLB</h3></div>
+            <div class="case-scenario">
+              <strong>Kasus:</strong> CV Batu Mandiri mengambil granit di Kabupaten Karimun, Kepulauan Riau sebanyak 10.000 ton/bulan. Harga patokan granit = Rp150.000/ton. Tarif Pajak MBLB Karimun = 15%. Opsen Provinsi = 25%.
+            </div>
+            <div class="calc-steps">
+              <div class="calc-step">
+                <div class="calc-step-num">1</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">DPP = Volume × Harga Patokan</div>
+                  <div class="calc-step-value">10.000 ton × Rp 150.000 = Rp 1.500.000.000</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">2</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">Pajak MBLB Pokok = DPP × Tarif (15%)</div>
+                  <div class="calc-step-value">Rp 1.500.000.000 × 15% = Rp 225.000.000</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">3</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">Opsen Pajak MBLB = Pajak Pokok × 25%</div>
+                  <div class="calc-step-value">Rp 225.000.000 × 25% = Rp 56.250.000</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">4</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">Total yang Dibayar WP</div>
+                  <div class="calc-step-value">Rp 225.000.000 + Rp 56.250.000 = Rp 281.250.000</div>
+                </div>
+              </div>
+            </div>
+            <div class="calc-result">
+              <span class="calc-result-label">✅ Total Pajak MBLB + Opsen</span>
+              <span class="calc-result-amount">Rp 281.250.000</span>
+            </div>
+          </div>
+
+          <div class="calc-interactive">
+            <h4>🧮 Kalkulator Pajak MBLB Interaktif</h4>
+            <div class="calc-inputs">
+              <div class="calc-input-group">
+                <label>Volume/Tonase (ton/m³)</label>
+                <input type="number" id="mblb-vol" placeholder="cth: 10000" value="10000">
+              </div>
+              <div class="calc-input-group">
+                <label>Harga Patokan (Rp/ton)</label>
+                <input type="number" id="mblb-harga" placeholder="cth: 150000" value="150000">
+              </div>
+              <div class="calc-input-group">
+                <label>Tarif Pajak MBLB (%)</label>
+                <input type="number" id="mblb-tarif" placeholder="cth: 15" value="15" step="1">
+              </div>
+              <div class="calc-input-group">
+                <label>Hitung Opsen Provinsi (25%)?</label>
+                <select id="mblb-opsen">
+                  <option value="ya">Ya</option>
+                  <option value="tidak">Tidak</option>
+                </select>
+              </div>
+            </div>
+            <button class="calc-btn" onclick="calcMBLB()">Hitung Pajak MBLB</button>
+            <div class="calc-output" id="mblb-output">
+              <div class="calc-output-row"><span class="calc-output-label">DPP (Nilai Jual)</span><span class="calc-output-val" id="mblb-r1">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">Pajak MBLB Pokok</span><span class="calc-output-val" id="mblb-r2">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">Opsen Provinsi (25%)</span><span class="calc-output-val" id="mblb-r3">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">Total yang Dibayar WP</span><span class="calc-output-val" id="mblb-r4">-</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 13. PAJAK SARANG BURUNG WALET -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <div class="tax-card" id="walet" data-type="kabkot" data-keywords="pajak sarang burung walet collocalia kabupaten kota">
+        <div class="tax-card-header" onclick="toggleCard('walet')">
+          <div class="tax-icon icon-kabkot">🐦</div>
+          <div class="tax-card-meta">
+            <div class="tax-card-top">
+              <span class="tax-card-name">Pajak Sarang Burung Walet</span>
+              <span class="tax-card-abbr abbr-kabkot">KAB/KOTA</span>
+            </div>
+            <div class="tax-card-pasal">Pasal 76–80 UU HKPD | Pasal 1 angka 59–60</div>
+            <div class="tax-card-desc">Pajak atas kegiatan pengambilan dan/atau pengusahaan sarang burung walet (Collocalia) yang bernilai ekonomis tinggi.</div>
+          </div>
+          <div class="tax-card-right">
+            <div class="tax-rate-badge">
+              <div class="tax-rate-label">Tarif Maks</div>
+              <div class="tax-rate-value tarif-mid">10%</div>
+            </div>
+            <button class="expand-btn" aria-label="Expand detail Pajak Walet">▼</button>
+          </div>
+        </div>
+
+        <div class="tax-card-body">
+          <div class="sections-grid">
+            <div class="section-block">
+              <h3 style="color:#60a5fa">📖 Definisi</h3>
+              <p>Pajak atas <strong>pengambilan dan/atau pengusahaan sarang Burung Walet</strong>. Burung Walet adalah satwa dari marga Collocalia (C. fuchliaphaga, C. maxima, C. esculenta, C. linchi) yang membangun sarang dari air liur dan digunakan sebagai bahan makanan bernilai tinggi.</p>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#34d399">🎯 Objek Pajak</h3>
+              <ul>
+                <li>Pengambilan sarang burung walet (dari gua alam)</li>
+                <li>Pengusahaan sarang burung walet (dari gedung walet)</li>
+              </ul>
+              <div class="excl-list">
+                <div class="excl-item">Pengambilan yang sudah dikenai PNBP (Penerimaan Negara Bukan Pajak)</div>
+              </div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#c4b5fd">👤 Subjek &amp; Wajib Pajak</h3>
+              <p><strong>Subjek = Wajib Pajak:</strong> Orang pribadi atau Badan yang melakukan pengambilan dan/atau mengusahakan sarang Burung Walet.</p>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#fcd34d">📊 DPP</h3>
+              <div class="dpp-formula">DPP = Nilai Jual Sarang Burung Walet
+     = Harga Pasaran Umum × Volume Sarang
+
+Harga Pasaran Umum = harga rata-rata yang berlaku
+                     di daerah yang bersangkutan</div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#f87171">💹 Tarif</h3>
+              <table class="tarif-table">
+                <tr><th>Keterangan</th><th>Tarif</th></tr>
+                <tr><td>Tarif maksimum</td><td class="tarif-mid">10%</td></tr>
+                <tr><td>Ditetapkan dengan</td><td>Perda Kab/Kota</td></tr>
+                <tr><td>Self assessment</td><td>WP hitung & lapor sendiri</td></tr>
+              </table>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#67e8f9">⏰ Saat Terutang</h3>
+              <div class="terutang-timeline">
+                <div class="terutang-item"><span class="terutang-dot"></span>Saat pengambilan/pengusahaan sarang dilakukan</div>
+                <div class="terutang-item"><span class="terutang-dot"></span>Dipungut di wilayah kab/kota tempat kegiatan</div>
+              </div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#a78bfa">📋 Peraturan Terkait</h3>
+              <div class="reg-tags">
+                <span class="reg-uu">UU HKPD Ps.76–80</span>
+                <span class="reg-pp">PP No. 35/2023</span>
+                <span class="reg-perda">Perda Kab/Kota</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-study">
+            <div class="case-study-header"><span>📚</span><h3>Studi Kasus &amp; Simulasi Pajak Sarang Burung Walet</h3></div>
+            <div class="case-scenario">
+              <strong>Kasus:</strong> Pak Herman memiliki gedung walet di Kotawaringin Barat, Kalteng. Produksi bulan ini: 50 kg sarang walet bersih. Harga pasaran = Rp12.000.000/kg. Tarif Pajak SBW Kotawaringin Barat = 5%.
+            </div>
+            <div class="calc-steps">
+              <div class="calc-step">
+                <div class="calc-step-num">1</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">DPP = Harga Pasaran × Volume</div>
+                  <div class="calc-step-value">Rp 12.000.000 × 50 kg = Rp 600.000.000</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">2</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">Pajak Walet = DPP × Tarif (5%)</div>
+                  <div class="calc-step-value">Rp 600.000.000 × 5% = Rp 30.000.000</div>
+                </div>
+              </div>
+            </div>
+            <div class="calc-result">
+              <span class="calc-result-label">✅ Pajak Sarang Burung Walet Terutang</span>
+              <span class="calc-result-amount">Rp 30.000.000</span>
+            </div>
+          </div>
+
+          <div class="calc-interactive">
+            <h4>🧮 Kalkulator Pajak Walet Interaktif</h4>
+            <div class="calc-inputs">
+              <div class="calc-input-group">
+                <label>Volume Sarang (kg)</label>
+                <input type="number" id="wal-vol" placeholder="cth: 50" value="50" step="0.1">
+              </div>
+              <div class="calc-input-group">
+                <label>Harga Pasaran (Rp/kg)</label>
+                <input type="number" id="wal-harga" placeholder="cth: 12000000" value="12000000">
+              </div>
+              <div class="calc-input-group">
+                <label>Tarif Pajak Walet (%)</label>
+                <input type="number" id="wal-tarif" placeholder="cth: 5" value="5" step="0.5">
+              </div>
+            </div>
+            <button class="calc-btn" onclick="calcWalet()">Hitung Pajak Walet</button>
+            <div class="calc-output" id="wal-output">
+              <div class="calc-output-row"><span class="calc-output-label">DPP (Nilai Jual)</span><span class="calc-output-val" id="wal-r1">-</span></div>
+              <div class="calc-output-row"><span class="calc-output-label">Pajak Walet Terutang</span><span class="calc-output-val" id="wal-r2">-</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 14. OPSEN PKB -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <div class="tax-card" id="opsen-pkb" data-type="kabkot" data-keywords="opsen pkb pajak kendaraan bermotor kabupaten kota pungutan tambahan">
+        <div class="tax-card-header" onclick="toggleCard('opsen-pkb')">
+          <div class="tax-icon icon-opsen">➕</div>
+          <div class="tax-card-meta">
+            <div class="tax-card-top">
+              <span class="tax-card-name">Opsen PKB (Opsen Pajak Kendaraan Bermotor)</span>
+              <span class="tax-card-abbr abbr-kabkot">KAB/KOTA ★</span>
+            </div>
+            <div class="tax-card-pasal">Pasal 81–84 UU HKPD | Pasal 1 angka 61–62</div>
+            <div class="tax-card-desc">Pungutan tambahan yang dikenakan oleh Kab/Kota atas pokok PKB Provinsi. Dipungut bersamaan dengan PKB dan langsung masuk kas Kab/Kota.</div>
+          </div>
+          <div class="tax-card-right">
+            <div class="tax-rate-badge">
+              <div class="tax-rate-label">Tarif</div>
+              <div class="tax-rate-value tarif-high">66% PKB</div>
+            </div>
+            <button class="expand-btn" aria-label="Expand detail Opsen PKB">▼</button>
+          </div>
+        </div>
+
+        <div class="tax-card-body">
+          <div class="sections-grid">
+            <div class="section-block">
+              <h3 style="color:#60a5fa">📖 Definisi &amp; Konsep</h3>
+              <p><strong>Opsen</strong> adalah pungutan tambahan Pajak menurut persentase tertentu (Pasal 1 angka 61). Opsen PKB dikenakan oleh Kab/Kota atas <strong>pokok PKB</strong> yang dipungut oleh Provinsi.</p>
+              <div class="note-box">📌 Mekanisme Opsen menggantikan sistem bagi hasil PKB antara provinsi dan kab/kota yang lama. WP membayar sekaligus ke Samsat, langsung dipotong ke kas kab/kota.</div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#34d399">🎯 Objek &amp; Wajib Pajak</h3>
+              <p><strong>Objek:</strong> PKB terutang (pokok PKB provinsi).</p>
+              <p style="margin-top:0.5rem"><strong>Wajib Pajak:</strong> Sama dengan WP PKB — pemilik kendaraan bermotor.</p>
+              <div class="info-pill">ℹ️ Opsen PKB otomatis berlaku untuk semua WP PKB di kab/kota — dipungut bersamaan saat bayar STNK di Samsat</div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#fcd34d">📊 Dasar Pengenaan &amp; Tarif</h3>
+              <div class="dpp-formula">Opsen PKB = 66% × PKB Terutang (Pokok)
+
+Tarif ditetapkan dengan Perda Kab/Kota
+Dipungut bersamaan dengan PKB di Samsat</div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#67e8f9">⏰ Mekanisme Pembayaran</h3>
+              <div class="terutang-timeline">
+                <div class="terutang-item"><span class="terutang-dot"></span>Dipungut BERSAMAAN dengan PKB Provinsi</div>
+                <div class="terutang-item"><span class="terutang-dot"></span>WP bayar 1x di Samsat: PKB + Opsen PKB + SWDKLLJ</div>
+                <div class="terutang-item"><span class="terutang-dot"></span>Hasil Opsen langsung masuk kas Kab/Kota</div>
+              </div>
+            </div>
+            <div class="section-block full-width">
+              <h3 style="color:#f87171">💹 Ilustrasi Pembagian PKB</h3>
+              <table class="tarif-table">
+                <tr><th>Komponen</th><th>Penerima</th><th>Contoh (PKB Rp1.000.000)</th></tr>
+                <tr><td>PKB Pokok</td><td>Provinsi</td><td class="tarif-mid">Rp 1.000.000</td></tr>
+                <tr><td>Opsen PKB (66%)</td><td>Kab/Kota</td><td class="tarif-high">Rp 660.000</td></tr>
+                <tr><td><strong>Total Bayar WP</strong></td><td>-</td><td class="tarif-low">Rp 1.660.000</td></tr>
+              </table>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#a78bfa">📋 Peraturan Terkait</h3>
+              <div class="reg-tags">
+                <span class="reg-uu">UU HKPD Ps.1(62), Ps.81–84</span>
+                <span class="reg-pp">PP No. 35/2023</span>
+                <span class="reg-perda">Perda Kab/Kota</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-study">
+            <div class="case-study-header"><span>📚</span><h3>Studi Kasus Opsen PKB</h3></div>
+            <div class="case-scenario">
+              <strong>Kasus:</strong> Pak Rudi memiliki Honda CR-V di Kabupaten Sleman, DI Yogyakarta. PKB Pokok = Rp1.500.000 (ditetapkan Provinsi DIY). Opsen PKB Sleman = 66%. Selain itu ada SWDKLLJ Rp143.000.
+            </div>
+            <div class="calc-steps">
+              <div class="calc-step">
+                <div class="calc-step-num">1</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">PKB Pokok (untuk Provinsi DIY)</div>
+                  <div class="calc-step-value">Rp 1.500.000</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">2</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">Opsen PKB (untuk Kab. Sleman) = 66% × PKB</div>
+                  <div class="calc-step-value">66% × Rp 1.500.000 = Rp 990.000</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">3</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">Total PKB + Opsen PKB</div>
+                  <div class="calc-step-value">Rp 1.500.000 + Rp 990.000 = Rp 2.490.000</div>
+                </div>
+              </div>
+            </div>
+            <div class="calc-result">
+              <span class="calc-result-label">✅ Total PKB + Opsen PKB Terutang</span>
+              <span class="calc-result-amount">Rp 2.490.000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 15. OPSEN BBNKB -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <div class="tax-card" id="opsen-bbnkb" data-type="kabkot" data-keywords="opsen bbnkb bea balik nama kendaraan bermotor kabupaten kota pungutan tambahan">
+        <div class="tax-card-header" onclick="toggleCard('opsen-bbnkb')">
+          <div class="tax-icon icon-opsen">🔖</div>
+          <div class="tax-card-meta">
+            <div class="tax-card-top">
+              <span class="tax-card-name">Opsen BBNKB</span>
+              <span class="tax-card-abbr abbr-kabkot">KAB/KOTA ★</span>
+            </div>
+            <div class="tax-card-pasal">Pasal 81–84 UU HKPD | Pasal 1 angka 63</div>
+            <div class="tax-card-desc">Pungutan tambahan yang dikenakan oleh Kab/Kota atas pokok BBNKB Provinsi. Dipungut bersamaan saat pembeli mendaftarkan kendaraan baru.</div>
+          </div>
+          <div class="tax-card-right">
+            <div class="tax-rate-badge">
+              <div class="tax-rate-label">Tarif</div>
+              <div class="tax-rate-value tarif-high">66% BBNKB</div>
+            </div>
+            <button class="expand-btn" aria-label="Expand detail Opsen BBNKB">▼</button>
+          </div>
+        </div>
+
+        <div class="tax-card-body">
+          <div class="sections-grid">
+            <div class="section-block">
+              <h3 style="color:#60a5fa">📖 Definisi</h3>
+              <p>Opsen yang dikenakan oleh <strong>Kab/Kota</strong> atas pokok BBNKB yang terutang di Provinsi. Memastikan kab/kota mendapat bagian langsung dari setiap pembelian kendaraan baru di wilayahnya.</p>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#fcd34d">📊 Dasar Pengenaan &amp; Tarif</h3>
+              <div class="dpp-formula">Opsen BBNKB = 66% × BBNKB Terutang (Pokok)
+
+Tarif ditetapkan dengan Perda Kab/Kota
+Dipungut bersamaan saat pendaftaran KB baru</div>
+            </div>
+            <div class="section-block full-width">
+              <h3 style="color:#f87171">💹 Ilustrasi Pembagian BBNKB</h3>
+              <table class="tarif-table">
+                <tr><th>Komponen</th><th>Penerima</th><th>Contoh (NJKB Rp200jt, tarif 10%)</th></tr>
+                <tr><td>BBNKB Pokok = 10% × NJKB</td><td>Provinsi</td><td class="tarif-mid">Rp 20.000.000</td></tr>
+                <tr><td>Opsen BBNKB (66%)</td><td>Kab/Kota</td><td class="tarif-high">Rp 13.200.000</td></tr>
+                <tr><td><strong>Total Bayar WP</strong></td><td>-</td><td class="tarif-low">Rp 33.200.000</td></tr>
+              </table>
+              <div class="note-box">⚠️ Untuk Provinsi DKI Jakarta (tidak terbagi kab/kota otonom): TIDAK ada Opsen BBNKB. Provinsi menerima BBNKB penuh dengan tarif lebih tinggi (maks 20%).</div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#a78bfa">📋 Peraturan Terkait</h3>
+              <div class="reg-tags">
+                <span class="reg-uu">UU HKPD Ps.1(63), Ps.81–84</span>
+                <span class="reg-pp">PP No. 35/2023</span>
+                <span class="reg-perda">Perda Kab/Kota</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-study">
+            <div class="case-study-header"><span>📚</span><h3>Studi Kasus Opsen BBNKB</h3></div>
+            <div class="case-scenario">
+              <strong>Kasus:</strong> Ibu Nita membeli Mitsubishi Xpander baru (NJKB = Rp230.000.000) di dealer Kota Bandung. Tarif BBNKB Jawa Barat = 10%. Opsen BBNKB Kota Bandung = 66%.
+            </div>
+            <div class="calc-steps">
+              <div class="calc-step">
+                <div class="calc-step-num">1</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">BBNKB Pokok = NJKB × 10%</div>
+                  <div class="calc-step-value">Rp 230.000.000 × 10% = Rp 23.000.000</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">2</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">Opsen BBNKB = 66% × BBNKB Pokok</div>
+                  <div class="calc-step-value">66% × Rp 23.000.000 = Rp 15.180.000</div>
+                </div>
+              </div>
+            </div>
+            <div class="calc-result">
+              <span class="calc-result-label">✅ Total BBNKB + Opsen BBNKB</span>
+              <span class="calc-result-amount">Rp 38.180.000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 16. OPSEN PAJAK MBLB -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <div class="tax-card" id="opsen-mblb" data-type="province" data-keywords="opsen pajak mblb mineral bukan logam batuan provinsi pungutan tambahan">
+        <div class="tax-card-header" onclick="toggleCard('opsen-mblb')">
+          <div class="tax-icon icon-opsen">💎</div>
+          <div class="tax-card-meta">
+            <div class="tax-card-top">
+              <span class="tax-card-name">Opsen Pajak MBLB</span>
+              <span class="tax-card-abbr abbr-province">PROVINSI ★</span>
+            </div>
+            <div class="tax-card-pasal">Pasal 81–84 UU HKPD | Pasal 1 angka 64</div>
+            <div class="tax-card-desc">Pungutan tambahan yang dikenakan oleh Provinsi atas pokok Pajak MBLB Kab/Kota. Arah sebaliknya dari Opsen PKB/BBNKB — ini provinsi memungut dari pajak kab/kota.</div>
+          </div>
+          <div class="tax-card-right">
+            <div class="tax-rate-badge">
+              <div class="tax-rate-label">Tarif</div>
+              <div class="tax-rate-value tarif-mid">25% MBLB</div>
+            </div>
+            <button class="expand-btn" aria-label="Expand detail Opsen Pajak MBLB">▼</button>
+          </div>
+        </div>
+
+        <div class="tax-card-body">
+          <div class="sections-grid">
+            <div class="section-block">
+              <h3 style="color:#60a5fa">📖 Definisi &amp; Arah Opsen</h3>
+              <p>Opsen yang dikenakan oleh <strong>Provinsi</strong> atas pokok Pajak MBLB yang dipungut oleh Kab/Kota. Berbeda dengan Opsen PKB dan BBNKB yang mengalir ke bawah (kab/kota memungut dari pajak provinsi), Opsen MBLB mengalir ke atas (provinsi memungut dari pajak kab/kota).</p>
+              <div class="note-box">Tujuan: Memastikan Provinsi mendapat bagian dari pemanfaatan sumber daya MBLB di wilayahnya, mengingat pengelolaan lingkungan lintas kab/kota ada di level provinsi.</div>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#fcd34d">📊 Dasar Pengenaan &amp; Tarif</h3>
+              <div class="dpp-formula">Opsen Pajak MBLB = 25% × Pajak MBLB Terutang (Pokok)
+
+Tarif ditetapkan dengan Perda Provinsi
+Dipungut bersamaan dengan Pajak MBLB Kab/Kota</div>
+            </div>
+            <div class="section-block full-width">
+              <h3 style="color:#f87171">💹 Ilustrasi Pembagian Pajak MBLB</h3>
+              <table class="tarif-table">
+                <tr><th>Komponen</th><th>Penerima</th><th>Contoh (Pajak MBLB Pokok Rp200jt)</th></tr>
+                <tr><td>Pajak MBLB Pokok</td><td>Kab/Kota</td><td class="tarif-mid">Rp 200.000.000</td></tr>
+                <tr><td>Opsen Pajak MBLB (25%)</td><td>Provinsi</td><td class="tarif-high">Rp 50.000.000</td></tr>
+                <tr><td><strong>Total Bayar WP</strong></td><td>-</td><td class="tarif-low">Rp 250.000.000</td></tr>
+              </table>
+            </div>
+            <div class="section-block">
+              <h3 style="color:#a78bfa">📋 Peraturan Terkait</h3>
+              <div class="reg-tags">
+                <span class="reg-uu">UU HKPD Ps.1(64), Ps.4(1)(g), Ps.81–84</span>
+                <span class="reg-pp">PP No. 35/2023</span>
+                <span class="reg-perda">Perda Provinsi</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-study">
+            <div class="case-study-header"><span>📚</span><h3>Studi Kasus Opsen Pajak MBLB</h3></div>
+            <div class="case-scenario">
+              <strong>Kasus:</strong> PT Batu Alam mengambil pasir dan kerikil di Kab. Malang. Volume: 5.000 m³. Harga patokan: Rp50.000/m³. Tarif Pajak MBLB Kab. Malang = 20%. Opsen Pajak MBLB Provinsi Jatim = 25%.
+            </div>
+            <div class="calc-steps">
+              <div class="calc-step">
+                <div class="calc-step-num">1</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">DPP = Volume × Harga Patokan</div>
+                  <div class="calc-step-value">5.000 × Rp 50.000 = Rp 250.000.000</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">2</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">Pajak MBLB Pokok = DPP × 20%</div>
+                  <div class="calc-step-value">Rp 250.000.000 × 20% = Rp 50.000.000</div>
+                </div>
+              </div>
+              <div class="calc-step">
+                <div class="calc-step-num">3</div>
+                <div class="calc-step-content">
+                  <div class="calc-step-label">Opsen Pajak MBLB = Pajak Pokok × 25%</div>
+                  <div class="calc-step-value">Rp 50.000.000 × 25% = Rp 12.500.000</div>
+                </div>
+              </div>
+            </div>
+            <div class="calc-result">
+              <span class="calc-result-label">✅ Total Pajak MBLB + Opsen</span>
+              <span class="calc-result-amount">Rp 62.500.000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end tax-grid -->
+
+    <!-- Empty state -->
+    <div class="empty-state" id="emptyState">
+      <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      <p>Tidak ada pajak yang ditemukan untuk pencarian "<span id="emptyQuery"></span>"</p>
+    </div>
+
+  </main>
+</div>
+
+<!-- Scroll to top -->
+<button class="scroll-top" id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Kembali ke atas">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
