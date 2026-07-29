@@ -130,6 +130,9 @@
     </div>
   </aside>
 
+  <!-- Sidebar toggle button -->
+  <div class="sidebar-toggle" id="sidebarToggle" onclick="toggleSidebar()" title="Sembunyikan/tampilkan navigasi">◀</div>
+
   <!-- MAIN -->
   <main class="main-content">
 
@@ -188,6 +191,7 @@
             </div>
             <div class="tax-card-pasal">Pasal 7–11 UU HKPD | Pasal 1 angka 28</div>
             <div class="tax-card-desc">Pajak atas kepemilikan dan/atau penguasaan kendaraan bermotor yang dipungut oleh Pemerintah Provinsi.</div>
+            <span class="assess-badge assess-official">🏛️ Official Assessment — SKPD diterbitkan Samsat/Pemda</span>
           </div>
           <div class="tax-card-right">
             <div class="tax-rate-badge">
@@ -378,6 +382,7 @@ Khusus KB di air: DPP = Nilai Jual KB saja</div>
             </div>
             <div class="tax-card-pasal">Pasal 12–16 UU HKPD | Pasal 1 angka 29</div>
             <div class="tax-card-desc">Pajak atas penyerahan pertama hak milik kendaraan bermotor akibat jual beli, tukar-menukar, hibah, warisan, atau pemasukan ke badan usaha.</div>
+            <span class="assess-badge assess-self">✍️ Self Assessment — WP menghitung & melaporkan sendiri</span>
           </div>
           <div class="tax-card-right">
             <div class="tax-rate-badge">
@@ -534,6 +539,7 @@ Tidak dikalikan bobot seperti PKB</div>
             </div>
             <div class="tax-card-pasal">Pasal 17–22 UU HKPD | Pasal 1 angka 31–32</div>
             <div class="tax-card-desc">Pajak atas kepemilikan dan/atau penguasaan alat berat (excavator, bulldozer, crane, dll.) yang tidak beroperasi di jalan.</div>
+            <span class="assess-badge assess-official">🏛️ Official Assessment — SKPD diterbitkan Pemda</span>
           </div>
           <div class="tax-card-right">
             <div class="tax-rate-badge">
@@ -681,6 +687,7 @@ Tidak dikalikan bobot seperti PKB</div>
             </div>
             <div class="tax-card-pasal">Pasal 23–27 UU HKPD | Pasal 1 angka 40–41</div>
             <div class="tax-card-desc">Pajak atas penggunaan bahan bakar kendaraan bermotor dan alat berat (bensin, solar, gas, dll), dipungut dari produsen/importir BBM.</div>
+            <span class="assess-badge assess-withhold">🔄 Withholding System — Dipungut produsen/importir BBM (Pertamina, dll)</span>
           </div>
           <div class="tax-card-right">
             <div class="tax-rate-badge">
@@ -819,6 +826,7 @@ Tidak dikalikan bobot seperti PKB</div>
             </div>
             <div class="tax-card-pasal">Pasal 28–32 UU HKPD | Pasal 1 angka 52–53</div>
             <div class="tax-card-desc">Pajak atas pengambilan dan/atau pemanfaatan air permukaan (sungai, danau, waduk, dll.) yang berada di atas permukaan tanah.</div>
+            <span class="assess-badge assess-official">🏛️ Official Assessment — SKPD diterbitkan berdasarkan izin penggunaan air</span>
           </div>
           <div class="tax-card-right">
             <div class="tax-rate-badge">
@@ -975,6 +983,7 @@ Bobot = koefisien berdasarkan:
             </div>
             <div class="tax-card-pasal">Pasal 33–37 UU HKPD | Pasal 1 angka 54</div>
             <div class="tax-card-desc">Pungutan atas cukai rokok yang dipungut oleh Pemerintah Pusat (DJBC) dan disetor ke kas daerah provinsi secara proporsional berdasarkan jumlah penduduk.</div>
+            <span class="assess-badge assess-withhold">🔄 Withholding System — Dipungut DJBC bersamaan dengan cukai tembakau</span>
           </div>
           <div class="tax-card-right">
             <div class="tax-rate-badge">
@@ -1122,6 +1131,7 @@ Bagi hasil: 70% → Kab/Kota (proporsional jumlah penduduk)</div>
             </div>
             <div class="tax-card-pasal">Pasal 38–43 UU HKPD | Pasal 1 angka 33–36</div>
             <div class="tax-card-desc">Pajak atas bumi dan/atau bangunan yang dimiliki, dikuasai, dan/atau dimanfaatkan di wilayah perdesaan dan perkotaan — berbeda dari PBB sektor pertambangan/perkebunan/perhutanan.</div>
+            <span class="assess-badge assess-official">🏛️ Official Assessment — SPPT diterbitkan Pemda Kab/Kota</span>
           </div>
           <div class="tax-card-right">
             <div class="tax-rate-badge">
@@ -1297,6 +1307,7 @@ NJOP ditinjau setiap 3 tahun (objek tertentu: tiap tahun)</div>
             </div>
             <div class="tax-card-pasal">Pasal 44–49 UU HKPD | Pasal 1 angka 37–39</div>
             <div class="tax-card-desc">Pajak atas perolehan hak atas tanah dan/atau bangunan melalui berbagai cara: jual beli, tukar-menukar, hibah, hibah wasiat, waris, lelang, dsb.</div>
+            <span class="assess-badge assess-self">✍️ Self Assessment — WP menghitung & menyetor sendiri via SSPD</span>
           </div>
           <div class="tax-card-right">
             <div class="tax-rate-badge">
@@ -1466,6 +1477,7 @@ DPP = NPOP - NPOP TKP</div>
             </div>
             <div class="tax-card-pasal">Pasal 50–59 UU HKPD | Pasal 1 angka 42–49</div>
             <div class="tax-card-desc">Pajak yang dibayarkan konsumen akhir atas konsumsi 5 kelompok barang/jasa: Makanan & Minuman, Tenaga Listrik, Jasa Perhotelan, Jasa Parkir, dan Jasa Kesenian & Hiburan.</div>
+            <span class="assess-badge assess-self">✍️ Self Assessment — WP (pengusaha) menghitung, menyetor, &amp; melaporkan sendiri</span>
           </div>
           <div class="tax-card-right">
             <div class="tax-rate-badge">
@@ -1620,6 +1632,7 @@ yang berlaku di daerah tersebut</div>
             </div>
             <div class="tax-card-pasal">Pasal 60–64 UU HKPD | Pasal 1 angka 50–51</div>
             <div class="tax-card-desc">Pajak atas penyelenggaraan reklame — segala media komersial yang dirancang untuk memperkenalkan, mempromosikan, atau menarik perhatian umum.</div>
+            <span class="assess-badge assess-official">🏛️ Official Assessment — Pajak ditetapkan Pemda berdasarkan izin reklame</span>
           </div>
           <div class="tax-card-right">
             <div class="tax-rate-badge">
@@ -1762,6 +1775,7 @@ yang berlaku di daerah tersebut</div>
             </div>
             <div class="tax-card-pasal">Pasal 65–70 UU HKPD | Pasal 1 angka 55–56</div>
             <div class="tax-card-desc">Pajak atas pengambilan dan/atau pemanfaatan air tanah (sumur bor, artesis, dll.) di bawah permukaan bumi untuk keperluan industri/usaha.</div>
+            <span class="assess-badge assess-official">🏛️ Official Assessment — SKPD diterbitkan berdasarkan izin pengambilan air</span>
           </div>
           <div class="tax-card-right">
             <div class="tax-rate-badge">
@@ -1913,6 +1927,7 @@ Bobot Air Tanah = koefisien berdasarkan:
             </div>
             <div class="tax-card-pasal">Pasal 71–75 UU HKPD | Pasal 1 angka 57–58</div>
             <div class="tax-card-desc">Pajak atas kegiatan pengambilan mineral bukan logam dan batuan (pasir, batu kapur, granit, tanah liat, dll.) dari sumber alam untuk dimanfaatkan.</div>
+            <span class="assess-badge assess-self">✍️ Self Assessment — WP melaporkan sendiri volume pengambilan</span>
           </div>
           <div class="tax-card-right">
             <div class="tax-rate-badge">
@@ -2074,6 +2089,7 @@ Harga Patokan = harga jual rata-rata per jenis MBLB
             </div>
             <div class="tax-card-pasal">Pasal 76–80 UU HKPD | Pasal 1 angka 59–60</div>
             <div class="tax-card-desc">Pajak atas kegiatan pengambilan dan/atau pengusahaan sarang burung walet (Collocalia) yang bernilai ekonomis tinggi.</div>
+            <span class="assess-badge assess-self">✍️ Self Assessment — WP melaporkan produksi & nilai jual sendiri</span>
           </div>
           <div class="tax-card-right">
             <div class="tax-rate-badge">
@@ -2203,6 +2219,7 @@ Harga Pasaran Umum = harga rata-rata yang berlaku
             </div>
             <div class="tax-card-pasal">Pasal 81–84 UU HKPD | Pasal 1 angka 61–62</div>
             <div class="tax-card-desc">Pungutan tambahan yang dikenakan oleh Kab/Kota atas pokok PKB Provinsi. Dipungut bersamaan dengan PKB dan langsung masuk kas Kab/Kota.</div>
+            <span class="assess-badge assess-official">🏛️ Official Assessment — Mengikuti sistem PKB (SKPD oleh Samsat)</span>
           </div>
           <div class="tax-card-right">
             <div class="tax-rate-badge">
@@ -2309,6 +2326,7 @@ Dipungut bersamaan dengan PKB di Samsat</div>
             </div>
             <div class="tax-card-pasal">Pasal 81–84 UU HKPD | Pasal 1 angka 63</div>
             <div class="tax-card-desc">Pungutan tambahan yang dikenakan oleh Kab/Kota atas pokok BBNKB Provinsi. Dipungut bersamaan saat pembeli mendaftarkan kendaraan baru.</div>
+            <span class="assess-badge assess-self">✍️ Self Assessment — Mengikuti sistem BBNKB (WP lapor sendiri)</span>
           </div>
           <div class="tax-card-right">
             <div class="tax-rate-badge">
@@ -2394,6 +2412,7 @@ Dipungut bersamaan saat pendaftaran KB baru</div>
             </div>
             <div class="tax-card-pasal">Pasal 81–84 UU HKPD | Pasal 1 angka 64</div>
             <div class="tax-card-desc">Pungutan tambahan yang dikenakan oleh Provinsi atas pokok Pajak MBLB Kab/Kota. Arah sebaliknya dari Opsen PKB/BBNKB — ini provinsi memungut dari pajak kab/kota.</div>
+            <span class="assess-badge assess-self">✍️ Self Assessment — Mengikuti sistem Pajak MBLB (WP lapor sendiri)</span>
           </div>
           <div class="tax-card-right">
             <div class="tax-rate-badge">

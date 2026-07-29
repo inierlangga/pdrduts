@@ -67,11 +67,53 @@ document.getElementById('searchInput').addEventListener('input', function() {
   }
 });
 
-// ── SCROLL & PROGRESS ────────────────────────────────────────
+// ── SIDEBAR TOGGLE ────────────────────────────────────────────
+function toggleSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  const toggle  = document.getElementById('sidebarToggle');
+  const isCollapsed = sidebar.classList.toggle('collapsed');
+  toggle.classList.toggle('collapsed', isCollapsed);
+  toggle.textContent = isCollapsed ? '▶' : '◀';
+}
+
+// ── SCROLL SPY (IntersectionObserver) ────────────────────────
+// Highlights the sidebar nav item matching whichever tax card
+// is currently most visible in the viewport.
+(function initScrollSpy() {
+  const cards = document.querySelectorAll('.tax-card');
+  if (!cards.length) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    // Find the entry with the largest intersection ratio that is intersecting
+    let best = null;
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        if (!best || entry.intersectionRatio > best.intersectionRatio) best = entry;
+      }
+    });
+    if (!best) return;
+
+    const id = best.target.id;
+    document.querySelectorAll('.sidebar-item').forEach(el => el.classList.remove('active'));
+    const sideLink = document.querySelector(`.sidebar-item[onclick*="'${id}'"]`);
+    if (sideLink) {
+      sideLink.classList.add('active');
+      // Auto-scroll sidebar so the active item is visible
+      sideLink.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    }
+  }, {
+    rootMargin: '-10% 0px -60% 0px', // triggers when card enters top 40% of viewport
+    threshold: [0, 0.1, 0.25, 0.5],
+  });
+
+  cards.forEach(card => observer.observe(card));
+})();
+
+// ── SCROLL & PROGRESS ─────────────────────────────────────────
 window.addEventListener('scroll', function() {
   const btn = document.getElementById('scrollTopBtn');
   btn.classList.toggle('visible', window.scrollY > 400);
-  
+
   const prog = document.getElementById('tocProgress');
   const docH = document.documentElement.scrollHeight - window.innerHeight;
   prog.style.width = (docH > 0 ? (window.scrollY/docH)*100 : 0) + '%';
